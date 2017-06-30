@@ -269,53 +269,47 @@ class Vec3d(object):
 		self.z *= value/length
 	length = property(get_length, __setlength, None, "gets or sets the magnitude of the vector")
 		
-	def rotate_around_z(self, angle_degrees):
-		radians = math.radians(angle_degrees)
-		cos = math.cos(radians)
-		sin = math.sin(radians)
+	def rotate_around_z(self, angle):
+		cos = math.cos(angle)
+		sin = math.sin(angle)
 		x = self.x*cos - self.y*sin
 		y = self.x*sin + self.y*cos
 		self.x = x
 		self.y = y
  
-	def rotate_around_x(self, angle_degrees):
-		radians = math.radians(angle_degrees)
-		cos = math.cos(radians)
-		sin = math.sin(radians)
+	def rotate_around_x(self, angle):
+		cos = math.cos(angle)
+		sin = math.sin(angle)
 		y = self.y*cos - self.z*sin
 		z = self.y*sin + self.z*cos
 		self.y = y
 		self.z = z
  
-	def rotate_around_y(self, angle_degrees):
-		radians = math.radians(angle_degrees)
-		cos = math.cos(radians)
-		sin = math.sin(radians)
+	def rotate_around_y(self, angle):
+		cos = math.cos(angle)
+		sin = math.sin(angle)
 		z = self.z*cos - self.x*sin
 		x = self.z*sin + self.x*cos
 		self.z = z
 		self.x = x
  
-	def rotated_around_z(self, angle_degrees):
-		radians = math.radians(angle_degrees)
-		cos = math.cos(radians)
-		sin = math.sin(radians)
+	def rotated_around_z(self, angle):
+		cos = math.cos(angle)
+		sin = math.sin(angle)
 		x = self.x*cos - self.y*sin
 		y = self.x*sin + self.y*cos
 		return Vec3d(x, y, self.z)
 	
-	def rotated_around_x(self, angle_degrees):
-		radians = math.radians(angle_degrees)
-		cos = math.cos(radians)
-		sin = math.sin(radians)
+	def rotated_around_x(self, angle):
+		cos = math.cos(angle)
+		sin = math.sin(angle)
 		y = self.y*cos - self.z*sin
 		z = self.y*sin + self.z*cos
 		return Vec3d(self.x, y, z)
 	
-	def rotated_around_y(self, angle_degrees):
-		radians = math.radians(angle_degrees)
-		cos = math.cos(radians)
-		sin = math.sin(radians)
+	def rotated_around_y(self, angle):
+		cos = math.cos(angle)
+		sin = math.sin(angle)
 		z = self.z*cos - self.x*sin
 		x = self.z*sin + self.x*cos
 		return Vec3d(x, self.y, z)
@@ -323,38 +317,38 @@ class Vec3d(object):
 	def get_angle_around_z(self):
 		if (self.get_length_sqrd() == 0):
 			return 0
-		return math.degrees(math.atan2(self.y, self.x))
-	def __setangle_around_z(self, angle_degrees):
+		return math.atan2(self.y, self.x)
+	def __setangle_around_z(self, angle):
 		self.x = math.sqrt(self.x**2 + self.y**2)
 		self.y = 0
-		self.rotate_around_z(angle_degrees)
+		self.rotate_around_z(angle)
 	angle_around_z = property(get_angle_around_z, __setangle_around_z, None, "gets or sets the angle of a vector in the XY plane")
  
 	def get_angle_around_x(self):
 		if (self.get_length_sqrd() == 0):
 			return 0
-		return math.degrees(math.atan2(self.z, self.y))
-	def __setangle_around_x(self, angle_degrees):
+		return math.atan2(self.z, self.y)
+	def __setangle_around_x(self, angle):
 		self.y = math.sqrt(self.y**2 + self.z**2)
 		self.z = 0
-		self.rotate_around_x(angle_degrees)
+		self.rotate_around_x(angle)
 	angle_around_x = property(get_angle_around_x, __setangle_around_x, None, "gets or sets the angle of a vector in the YZ plane")
  
 	def get_angle_around_y(self):
 		if (self.get_length_sqrd() == 0):
 			return 0
-		return math.degrees(math.atan2(self.x, self.z))
-	def __setangle_around_y(self, angle_degrees):
+		return math.atan2(self.x, self.z)
+	def __setangle_around_y(self, angle):
 		self.z = math.sqrt(self.z**2 + self.x**2)
 		self.x = 0
-		self.rotate_around_y(angle_degrees)
+		self.rotate_around_y(angle)
 	angle_around_y = property(get_angle_around_y, __setangle_around_y, None, "gets or sets the angle of a vector in the ZX plane")
  
 	def get_angle_between(self, other):
 		v1 = self.normalized()
 		v2 = Vec3d(other)
 		v2.normalize_return_length()
-		return math.degrees(math.acos(v1.dot(v2)))
+		return math.acos(v1.dot(v2))
 			
 	def normalized(self):
 		length = self.length
@@ -463,33 +457,33 @@ if __name__ == "__main__":
 			
 		def testAngles(self):			 
 			v = Vec3d(0, 3, -3)
-			self.assertEquals(v.angle_around_y, 180)
-			self.assertEquals(v.angle_around_x, -45)
-			self.assertEquals(v.angle_around_z, 90)
+			self.assertEquals(v.angle_around_y, 180*math.pi/180)
+			self.assertEquals(v.angle_around_x, -45*math.pi/180)
+			self.assertEquals(v.angle_around_z, 90*math.pi/180)
 
 			v2 = Vec3d(v)
-			v.rotate_around_x(-90)
-			self.assertEqual(v.get_angle_between(v2), 90)
+			v.rotate_around_x(-90*math.pi/180)
+			self.assertEqual(v.get_angle_between(v2), 90*math.pi/180)
 
 			v = Vec3d(v2)
-			v.rotate_around_y(-90)
-			self.assertAlmostEqual(v.get_angle_between(v2), 60)
+			v.rotate_around_y(-90*math.pi/180)
+			self.assertAlmostEqual(v.get_angle_between(v2), 60*math.pi/180)
 
 			v = Vec3d(v2)
-			v.rotate_around_z(-90)
-			self.assertAlmostEqual(v.get_angle_between(v2), 60)
+			v.rotate_around_z(-90*math.pi/180)
+			self.assertAlmostEqual(v.get_angle_between(v2), 60*math.pi/180)
 
-			v2.angle_around_z -= 90
+			v2.angle_around_z -= 90*math.pi/180
 			self.assertEqual(v.length, v2.length)
 			self.assertEquals(v2.angle_around_z, 0)
 			self.assertEqual(v2, [3, 0, -3])
 			self.assert_((v - v2).length < .00001)
 			self.assertEqual(v.length, v2.length)
-			v2.rotate_around_y(300)
-			self.assertAlmostEquals(v.get_angle_between(v2), 60)
+			v2.rotate_around_y(300*math.pi/180)
+			self.assertAlmostEquals(v.get_angle_between(v2), 60*math.pi/180)
 			v2.rotate_around_y(v2.get_angle_between(v))
 			angle = v.get_angle_between(v2)
-			self.assertAlmostEquals(v.get_angle_between(v2), 0)	 
+			self.assertAlmostEquals(v.get_angle_between(v2), 0*math.pi/180)	 
  
 		def testHighLevel(self):
 			basis0 = Vec3d(5.0, 0, 0)

@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 SCREEN_SIZE = (640, 480)
 NEST_POSITION = (320, 240)
 ANT_COUNT = 20

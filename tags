@@ -113,6 +113,8 @@ SLOW_INTERVAL	oldgame.py	/^SLOW_INTERVAL = 6$/;"	v
 SLOW_PERC	oldgame.py	/^SLOW_PERC = 0.994$/;"	v
 SPEED_SCALE	oldgame.py	/^SPEED_SCALE = 1.5   # or 0.05 \/ TIMER_INTERVAL$/;"	v
 Spider	hisantgame.py	/^class Spider(GameEntity):$/;"	c
+Star	hisstar.py	/^class Star(object):$/;"	c
+Star	hisstar.py~	/^class Star(object):$/;"	c
 State	antvspi.py	/^class State():$/;"	c
 State	antvspi.py~	/^class State():$/;"	c
 State	hisantgame.py	/^class State(object):$/;"	c
@@ -134,6 +136,7 @@ Vec2d	VectorClass.py	/^class Vec2d(object):$/;"	c
 Vec2d	antvspi.py	/^from VectorClass import Vec2d$/;"	i
 Vec2d	antvspi.py~	/^from VectorClass import Vec2d$/;"	i
 Vec2d	game.py	/^from VectorClass import Vec2d$/;"	i
+Vec2d	game.py~	/^from VectorClass import Vec2d$/;"	i
 Vec2d	hisantgame.py	/^from VectorClass import Vec2d$/;"	i
 Vec2d	swimfisher.py	/^from VectorClass import Vec2d$/;"	i
 Vec2d	swimfisher.py~	/^from VectorClass import Vec2d$/;"	i
@@ -252,6 +255,8 @@ __init__	hisantgame.py	/^    def __init__(self, world, image):$/;"	m	class:Ant
 __init__	hisantgame.py	/^    def __init__(self, world, image):$/;"	m	class:Leaf
 __init__	hisantgame.py	/^    def __init__(self, world, image):$/;"	m	class:Spider
 __init__	hisantgame.py	/^    def __init__(self, world, name, image):$/;"	m	class:GameEntity
+__init__	hisstar.py	/^    def __init__(self, x, y, speed):$/;"	m	class:Star
+__init__	hisstar.py~	/^    def __init__(self, x, y, speed):$/;"	m	class:Star
 __init__	movement.py	/^    def __init__(self, *l):$/;"	m	class:Coor
 __init__	movement.py~	/^    def __init__(self, *l):$/;"	m	class:Coor
 __init__	pysic.py	/^    def __init__(self, mass=0, pos=INIT_VECTOR, spd=INIT_VECTOR, linknod=None):$/;"	m	class:Object
@@ -436,7 +441,9 @@ angle_around_x	3DVectorClass.py	/^	angle_around_x = property(get_angle_around_x,
 angle_around_y	3DVectorClass.py	/^	angle_around_y = property(get_angle_around_y, __setangle_around_y, None, "gets or sets the angle of a vector in the ZX plane")$/;"	v	class:Vec3d
 angle_around_z	3DVectorClass.py	/^	angle_around_z = property(get_angle_around_z, __setangle_around_z, None, "gets or sets the angle of a vector in the XY plane")$/;"	v	class:Vec3d
 angular_force	game.py	/^    angular_force = 0$/;"	v
-angular_force_scale	game.py	/^angular_force_scale = 0.0005$/;"	v
+angular_force	game.py~	/^    angular_force = 0$/;"	v
+angular_force_scale	game.py	/^angular_force_scale = 0.0005\/2$/;"	v
+angular_force_scale	game.py~	/^angular_force_scale = 0.0005$/;"	v
 ant_image	antvspi.py	/^    ant_image = pygame.image.load('ant.bmp').convert_alpha()$/;"	v
 ant_image	antvspi.py~	/^    ant_image = pygame.image.load('ant.bmp').convert_alpha()$/;"	v
 append	antvspi.py	/^    def append(self, entity):$/;"	m	class:World
@@ -447,6 +454,8 @@ array	pymat.py	/^class array(list):$/;"	c
 b	pymat.py	/^    b = matrix([array([1, 4]), array([6, 2])])$/;"	v
 background	game.py	/^    background = 'sushiplate.bmp'$/;"	v
 background	game.py	/^    background = None$/;"	v
+background	game.py~	/^    background = 'sushiplate.bmp'$/;"	v
+background	game.py~	/^    background = None$/;"	v
 background	movement.py	/^background = 'sushiplate.bmp'$/;"	v
 background	movement.py	/^background = pygame.image.load(background).convert()$/;"	v
 background	movement.py~	/^background = 'sushiplate.bmp'$/;"	v
@@ -481,6 +490,7 @@ choice	hisantgame.py	/^from random import randint, choice$/;"	i
 clock	antvspi.py	/^    clock = pygame.time.Clock()$/;"	v
 clock	antvspi.py~	/^    clock = pygame.time.Clock()$/;"	v
 clock	game.py	/^clock = pygame.time.Clock()$/;"	v
+clock	game.py~	/^clock = pygame.time.Clock()$/;"	v
 clock	movement.py	/^clock = pygame.time.Clock()$/;"	v
 clock	movement.py~	/^clock = pygame.time.Clock()$/;"	v
 clock	swimfisher.py	/^clock = pygame.time.Clock()$/;"	v
@@ -629,18 +639,28 @@ interpolate_to	3DVectorClass.py	/^	def interpolate_to(self, other, range):$/;"	m
 interpolate_to	VectorClass.py	/^    def interpolate_to(self, other, range):$/;"	m	class:Vec2d
 intone	pysic2.py	/^    def intone(self):$/;"	m	class:vector
 key_direction	game.py	/^    key_direction = Vec2d(0, 0)$/;"	v
+key_direction	game.py~	/^    key_direction = Vec2d(0, 0)$/;"	v
 key_force	game.py	/^    key_force = key_direction * key_force_scale$/;"	v
-key_force_scale	game.py	/^key_force_scale = 0.001$/;"	v
+key_force	game.py~	/^    key_force = key_direction * key_force_scale$/;"	v
+key_force_scale	game.py	/^key_force_scale = 0.001\/2$/;"	v
+key_force_scale	game.py~	/^key_force_scale = 0.001$/;"	v
 length	2DVectorClass.py	/^    length = property(get_length, __setlength, None, "gets or sets the magnitude of the vector")$/;"	v	class:Vec2d
 length	3DVectorClass.py	/^	length = property(get_length, __setlength, None, "gets or sets the magnitude of the vector")$/;"	v	class:Vec3d
 length	VectorClass.py	/^    length = property(get_length, __setlength, None, "gets or sets the magnitude of the vector")$/;"	v	class:Vec2d
 linelength	game.py	/^        linelength = angular_force * 50000$/;"	v
 linelength	game.py	/^        linelength = key_force.x * 50000$/;"	v
 linelength	game.py	/^        linelength = key_force.y * 50000$/;"	v
+linelength	game.py~	/^        linelength = angular_force * 50000$/;"	v
+linelength	game.py~	/^        linelength = key_force.x * 50000$/;"	v
+linelength	game.py~	/^        linelength = key_force.y * 50000$/;"	v
 linevector	game.py	/^        linevector = ((size.x*9\/10, size.y\/2), (size.x*9\/10, size.y\/2-linelength))$/;"	v
 linevector	game.py	/^        linevector = ((size.x\/10, size.y\/2), (size.x\/10, size.y\/2+linelength))$/;"	v
 linevector	game.py	/^        linevector = ((size.x\/2, size.y\/2), (size.x\/2, size.y\/2-linelength))$/;"	v
 linevector	game.py	/^        linevector = ((size.x\/2, size.y\/2), (size.x\/2-linelength, size.y\/2))$/;"	v
+linevector	game.py~	/^        linevector = ((size.x*9\/10, size.y\/2), (size.x*9\/10, size.y\/2-linelength))$/;"	v
+linevector	game.py~	/^        linevector = ((size.x\/10, size.y\/2), (size.x\/10, size.y\/2+linelength))$/;"	v
+linevector	game.py~	/^        linevector = ((size.x\/2, size.y\/2), (size.x\/2, size.y\/2-linelength))$/;"	v
+linevector	game.py~	/^        linevector = ((size.x\/2, size.y\/2), (size.x\/2-linelength, size.y\/2))$/;"	v
 m	pymat.py	/^    m = matrix.cons2d([[12, 5], [2, 0], [4, 3]])$/;"	v
 math	2DVectorClass.py	/^import math$/;"	i
 math	3DVectorClass.py	/^import math$/;"	i
@@ -679,6 +699,8 @@ myfun	antvspi.py	/^            def myfun(r, w=1):$/;"	f	function:GameEntity.rand
 myfun	antvspi.py~	/^            def myfun(r, w=1):$/;"	f	function:GameEntity.random_destination.getrand
 new_sprite	game.py	/^        new_sprite = pygame.Surface(size).convert_alpha()$/;"	v
 new_sprite	game.py	/^    new_sprite = sprite$/;"	v
+new_sprite	game.py~	/^        new_sprite = pygame.Surface(size).convert_alpha()$/;"	v
+new_sprite	game.py~	/^    new_sprite = sprite$/;"	v
 norm	pyvec.py	/^    def norm(v):$/;"	m	class:Vector
 norm	pyvec.py~	/^    def norm(v):$/;"	m	class:Vector
 normalize_return_length	2DVectorClass.py	/^    def normalize_return_length(self):$/;"	m	class:Vec2d
@@ -697,6 +719,8 @@ obj2	pysic.py	/^    obj2 = Object(mass=3, pos=Vector(-8, 0), spd=Vector(0, 0))$/
 obj2	pysic.py~	/^    obj2 = Object(mass=3, pos=Vector(-8, 0), spd=Vector(0, 0))$/;"	v	class:Object
 obj2	univgame.py	/^obj2 = Object(mass=8, pos=Vector(-5, 0), spd=Vector(0, -10))$/;"	v
 obj2	univgame.py~	/^obj2 = Object(mass=8, pos=Vector(-5, 0), spd=Vector(0, -10))$/;"	v
+on_screen	hisstar.py	/^        def on_screen(star):$/;"	f	function:run
+on_screen	hisstar.py~	/^        def on_screen(star):$/;"	f	function:run
 op	vector.py	/^import operator as op$/;"	i
 operator	2DVectorClass.py	/^import operator$/;"	i
 operator	3DVectorClass.py	/^import operator$/;"	i
@@ -735,6 +759,7 @@ pos	movement.py~	/^pos = Coor((screen.get_width() \/ 2, screen.get_height() \/ 2
 pos	test_color.py	/^        pos = ( int((color[component]\/255.)*639), component*80+40 )$/;"	v
 pos	test_color.py~	/^        pos = ( int((color[component]\/255.)*639), component*80+40 )$/;"	v
 pressed_keys	game.py	/^    pressed_keys = pygame.key.get_pressed()$/;"	v
+pressed_keys	game.py~	/^    pressed_keys = pygame.key.get_pressed()$/;"	v
 pressed_keys	swimfisher.py	/^    pressed_keys = pygame.key.get_pressed()$/;"	v
 pressed_keys	swimfisher.py~	/^    pressed_keys = pygame.key.get_pressed()$/;"	v
 pressed_mouse	swimfisher.py	/^    pressed_mouse = pygame.mouse.get_pressed()$/;"	v
@@ -758,7 +783,10 @@ pygame	antvspi.py~	/^import pygame$/;"	i
 pygame	blend_color.py	/^import pygame$/;"	i
 pygame	blend_color.py~	/^import pygame$/;"	i
 pygame	game.py	/^import pygame$/;"	i
+pygame	game.py~	/^import pygame$/;"	i
 pygame	hisantgame.py	/^import pygame$/;"	i
+pygame	hisstar.py	/^import pygame$/;"	i
+pygame	hisstar.py~	/^import pygame$/;"	i
 pygame	movement.py	/^import pygame$/;"	i
 pygame	movement.py~	/^import pygame$/;"	i
 pygame	oldgame.py	/^import pygame$/;"	i
@@ -783,6 +811,8 @@ quit_game	univgame.py~	/^def quit_game():$/;"	f
 randint	antvspi.py	/^from random import randint$/;"	i
 randint	antvspi.py~	/^from random import randint$/;"	i
 randint	hisantgame.py	/^from random import randint, choice$/;"	i
+randint	hisstar.py	/^from random import randint$/;"	i
+randint	hisstar.py~	/^from random import randint$/;"	i
 randint	randart.py	/^from random import randint$/;"	i
 randint	randart.py~	/^from random import randint$/;"	i
 random	oldgame.py	/^from random import random$/;"	i
@@ -827,6 +857,7 @@ rotated_around_x	3DVectorClass.py	/^	def rotated_around_x(self, angle_degrees):$
 rotated_around_y	3DVectorClass.py	/^	def rotated_around_y(self, angle_degrees):$/;"	m	class:Vec3d
 rotated_around_z	3DVectorClass.py	/^	def rotated_around_z(self, angle_degrees):$/;"	m	class:Vec3d
 rotated_sprite	game.py	/^    rotated_sprite = pygame.transform.rotate(new_sprite, -degrees(sprite_angle))$/;"	v
+rotated_sprite	game.py~	/^    rotated_sprite = pygame.transform.rotate(new_sprite, -degrees(sprite_angle))$/;"	v
 rotated_sprite	swimfisher.py	/^    rotated_sprite = pygame.transform.rotate(sprite, sprite_rotation)$/;"	v
 rotated_sprite	swimfisher.py~	/^    rotated_sprite = pygame.transform.rotate(sprite, sprite_rotation)$/;"	v
 rotation_direction	swimfisher.py	/^        rotation_direction = +1.$/;"	v
@@ -844,6 +875,8 @@ rr	randart2.py~	/^            rr = randint(1, 200)$/;"	v
 rs	randart2.py	/^            rs = (639-randint(rp[0], 639), 479-randint(rp[1], 479))$/;"	v
 rs	randart2.py~	/^            rs = (639-randint(rp[0], 639), 479-randint(rp[1], 479))$/;"	v
 run	hisantgame.py	/^def run():$/;"	f
+run	hisstar.py	/^def run():$/;"	f
+run	hisstar.py~	/^def run():$/;"	f
 screen	antvspi.py	/^    screen = pygame.display.set_mode(SCREEN_SIZE, SCREEN_ATTR, 32)$/;"	v
 screen	antvspi.py~	/^    screen = pygame.display.set_mode(SCREEN_SIZE, SCREEN_ATTR, 32)$/;"	v
 screen	blend_color.py	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
@@ -851,6 +884,9 @@ screen	blend_color.py~	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"
 screen	game.py	/^    screen = ((640, 480), DOUBLEBUF | NOFRAME, 32)$/;"	v
 screen	game.py	/^    screen = (1920, 1080), DOUBLEBUF | FULLSCREEN | HWSURFACE, 32$/;"	v
 screen	game.py	/^screen = pygame.display.set_mode(*screen)$/;"	v
+screen	game.py~	/^    screen = ((640, 480), DOUBLEBUF | NOFRAME, 32)$/;"	v
+screen	game.py~	/^    screen = (1920, 1080), DOUBLEBUF | FULLSCREEN | HWSURFACE, 32$/;"	v
+screen	game.py~	/^screen = pygame.display.set_mode(*screen)$/;"	v
 screen	movement.py	/^screen = pygame.display.set_mode((1920, 1080), DOUBLEBUF | FULLSCREEN | HWSURFACE, 32)$/;"	v
 screen	movement.py~	/^screen = pygame.display.set_mode((1920, 1080), DOUBLEBUF | FULLSCREEN | HWSURFACE, 32)$/;"	v
 screen	oldgame.py	/^screen = pygame.display.set_mode(SCREEN_SIZE, SCREEN_ATTR, 32)$/;"	v
@@ -888,6 +924,8 @@ show_world	univgame.py	/^def show_world(screen, dt=0):$/;"	f
 show_world	univgame.py~	/^def show_world(screen, dt=0):$/;"	f
 size	game.py	/^        size = Vec2d(new_sprite.get_size())$/;"	v
 size	game.py	/^    size = Vec2d(rotated_sprite.get_size())$/;"	v
+size	game.py~	/^        size = Vec2d(new_sprite.get_size())$/;"	v
+size	game.py~	/^    size = Vec2d(rotated_sprite.get_size())$/;"	v
 sleep	movement.py	/^from time import sleep$/;"	i
 sleep	movement.py~	/^from time import sleep$/;"	i
 sleep	pysic.py	/^    from time import sleep$/;"	i
@@ -909,6 +947,8 @@ speed_up_with	pysic.py	/^    def speed_up_with(self, his_mass, dot_spd):$/;"	m	c
 speed_up_with	pysic.py~	/^    def speed_up_with(self, his_mass, dot_spd):$/;"	m	class:Object
 sprite	game.py	/^sprite = 'fugu.bmp'$/;"	v
 sprite	game.py	/^sprite = pygame.image.load(sprite).convert_alpha()$/;"	v
+sprite	game.py~	/^sprite = 'fugu.bmp'$/;"	v
+sprite	game.py~	/^sprite = pygame.image.load(sprite).convert_alpha()$/;"	v
 sprite	movement.py	/^sprite = 'fugu.bmp'$/;"	v
 sprite	movement.py	/^sprite = pygame.image.load(sprite)$/;"	v
 sprite	movement.py~	/^sprite = 'fugu.bmp'$/;"	v
@@ -918,12 +958,15 @@ sprite	swimfisher.py	/^sprite = pygame.transform.rotate(sprite, 90)$/;"	v
 sprite	swimfisher.py~	/^sprite = pygame.image.load(sprite_image_filename).convert_alpha()$/;"	v
 sprite	swimfisher.py~	/^sprite = pygame.transform.rotate(sprite, 90)$/;"	v
 sprite_angle	game.py	/^sprite_angle = 0$/;"	v
+sprite_angle	game.py~	/^sprite_angle = 0$/;"	v
 sprite_angular_speed	game.py	/^sprite_angular_speed = 0$/;"	v
+sprite_angular_speed	game.py~	/^sprite_angular_speed = 0$/;"	v
 sprite_draw_pos	swimfisher.py	/^    sprite_draw_pos = Vector2(sprite_pos.x-w\/2, sprite_pos.y-h\/2)$/;"	v
 sprite_draw_pos	swimfisher.py~	/^    sprite_draw_pos = Vector2(sprite_pos.x-w\/2, sprite_pos.y-h\/2)$/;"	v
 sprite_image_filename	swimfisher.py	/^sprite_image_filename = 'fugu.bmp'$/;"	v
 sprite_image_filename	swimfisher.py~	/^sprite_image_filename = 'fugu.bmp'$/;"	v
 sprite_pos	game.py	/^sprite_pos = Vec2d(screen.get_size()) \/ 2$/;"	v
+sprite_pos	game.py~	/^sprite_pos = Vec2d(screen.get_size()) \/ 2$/;"	v
 sprite_pos	swimfisher.py	/^sprite_pos = Vector2(200, 150)$/;"	v
 sprite_pos	swimfisher.py~	/^sprite_pos = Vector2(200, 150)$/;"	v
 sprite_rotation	swimfisher.py	/^sprite_rotation = 0.$/;"	v
@@ -931,6 +974,7 @@ sprite_rotation	swimfisher.py~	/^sprite_rotation = 0.$/;"	v
 sprite_rotation_speed	swimfisher.py	/^sprite_rotation_speed = 360.$/;"	v
 sprite_rotation_speed	swimfisher.py~	/^sprite_rotation_speed = 360.$/;"	v
 sprite_speed	game.py	/^sprite_speed = Vec2d(0, 0)$/;"	v
+sprite_speed	game.py~	/^sprite_speed = Vec2d(0, 0)$/;"	v
 sprite_speed	swimfisher.py	/^sprite_speed = 300.$/;"	v
 sprite_speed	swimfisher.py~	/^sprite_speed = 300.$/;"	v
 sys	oldgame.py	/^import sys$/;"	i
@@ -979,6 +1023,7 @@ time	oldgame.py	/^import time$/;"	i
 time	univgame.py	/^import time$/;"	i
 time	univgame.py~	/^import time$/;"	i
 time_passed	game.py	/^    time_passed = clock.tick(60)$/;"	v
+time_passed	game.py~	/^    time_passed = clock.tick(60)$/;"	v
 time_passed	movement.py	/^    time_passed = clock.tick()$/;"	v
 time_passed	movement.py~	/^    time_passed = clock.tick()$/;"	v
 time_passed	swimfisher.py	/^    time_passed = clock.tick()$/;"	v
