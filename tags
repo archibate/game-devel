@@ -1,0 +1,1029 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ANT_COUNT	hisantgame.py	/^ANT_COUNT = 20$/;"	v
+ANT_MAX	antvspi.py	/^ANT_MAX = 32$/;"	v
+ANT_MAX	antvspi.py~	/^ANT_MAX = 32$/;"	v
+Ant	antvspi.py	/^class Ant(GameEntity):$/;"	c
+Ant	antvspi.py~	/^class Ant(GameEntity):$/;"	c
+Ant	hisantgame.py	/^class Ant(GameEntity):$/;"	c
+AntExploring	antvspi.py	/^class AntExploring(State):$/;"	c
+AntExploring	antvspi.py~	/^class AntExploring(State):$/;"	c
+AntSeeking	antvspi.py	/^class AntSeeking(State):$/;"	c
+AntSeeking	antvspi.py~	/^class AntSeeking(State):$/;"	c
+AntStateDelivering	hisantgame.py	/^class AntStateDelivering(State):$/;"	c
+AntStateExploring	hisantgame.py	/^class AntStateExploring(State):$/;"	c
+AntStateHunting	hisantgame.py	/^class AntStateHunting(State):$/;"	c
+AntStateSeeking	hisantgame.py	/^class AntStateSeeking(State):$/;"	c
+BACKGROUND	oldgame.py	/^    BACKGROUND = 'paltanen.bmp'$/;"	v
+BACKGROUND	oldgame.py	/^    BACKGROUND = 'sushiplate.bmp'$/;"	v
+BACKGROUND	oldgame.py	/^    BACKGROUND = 'violet.bmp'$/;"	v
+BACKGROUND	oldgame.py	/^    BACKGROUND = None$/;"	v
+BACKGROUND	univgame.py	/^    BACKGROUND = 'paltanen.bmp'$/;"	v
+BACKGROUND	univgame.py	/^    BACKGROUND = 'sushiplate.bmp'$/;"	v
+BACKGROUND	univgame.py	/^    BACKGROUND = 'violet.bmp'$/;"	v
+BACKGROUND	univgame.py	/^    BACKGROUND = None$/;"	v
+BACKGROUND	univgame.py~	/^    BACKGROUND = 'paltanen.bmp'$/;"	v
+BACKGROUND	univgame.py~	/^    BACKGROUND = 'sushiplate.bmp'$/;"	v
+BACKGROUND	univgame.py~	/^    BACKGROUND = 'violet.bmp'$/;"	v
+BACKGROUND	univgame.py~	/^    BACKGROUND = None$/;"	v
+Coor	movement.py	/^class Coor(tuple):$/;"	c
+Coor	movement.py~	/^class Coor(tuple):$/;"	c
+FORCE_ONCE	oldgame.py	/^FORCE_ONCE = 0.025 * SCALE$/;"	v
+FULLSCREEN	pysic.py	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+FULLSCREEN	pysic.py~	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+FULL_SCREEN	antvspi.py	/^FULL_SCREEN = True if len(argv) > 1 and argv[1] == 'full' else False$/;"	v
+FULL_SCREEN	antvspi.py~	/^FULL_SCREEN = True if len(argv) > 1 and argv[1] == 'full' else False$/;"	v
+GRAVITY_FORCE	oldgame.py	/^GRAVITY_FORCE = 0.4 * FORCE_ONCE    # or 0.01 or 0.001$/;"	v
+GameEntity	antvspi.py	/^class GameEntity(object):$/;"	c
+GameEntity	antvspi.py~	/^class GameEntity(object):$/;"	c
+GameEntity	hisantgame.py	/^class GameEntity(object):$/;"	c
+HWSURFACE	pysic.py	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+HWSURFACE	pysic.py~	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+INIT_MASS_PERC	univgame.py	/^INIT_MASS_PERC = 1.5$/;"	v
+INIT_MASS_PERC	univgame.py~	/^INIT_MASS_PERC = 1.5$/;"	v
+INIT_VECTOR	pysic.py	/^INIT_VECTOR = Vector2D(0, 0)$/;"	v
+INIT_VECTOR	pysic.py~	/^INIT_VECTOR = Vector2D(0, 0)$/;"	v
+KEYDOWN	pysic.py	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+KEYDOWN	pysic.py~	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+Leaf	hisantgame.py	/^class Leaf(GameEntity):$/;"	c
+MISSUE_ACV	pysic.py	/^    MISSUE_ACV = -10*300$/;"	v	class:Object
+MISSUE_ACV	pysic.py~	/^    MISSUE_ACV = -10*300$/;"	v	class:Object
+NEST_POSITION	hisantgame.py	/^NEST_POSITION = (320, 240)$/;"	v
+NEST_SIZE	hisantgame.py	/^NEST_SIZE = 100.$/;"	v
+NOFRAME	pysic.py	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+NOFRAME	pysic.py~	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+ORIGXY	univgame.py	/^ORIGXY = screen_width \/ 2, screen_height \/ 2$/;"	v
+ORIGXY	univgame.py~	/^ORIGXY = screen_width \/ 2, screen_height \/ 2$/;"	v
+Object	oldgame.py	/^class Object(pysic.Object):$/;"	c
+Object	pysic.py	/^class Object:$/;"	c
+Object	pysic.py~	/^class Object:$/;"	c
+Object	univgame.py	/^class Object(pysic.Object):$/;"	c
+Object	univgame.py~	/^class Object(pysic.Object):$/;"	c
+PXNG_SLOW_PERC	oldgame.py	/^PXNG_SLOW_PERC = 0.67$/;"	v
+Position	univgame.py	/^Position = Vector$/;"	v
+Position	univgame.py~	/^Position = Vector$/;"	v
+QUIT	pysic.py	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+QUIT	pysic.py~	/^    from pygame.locals import QUIT, KEYDOWN, NOFRAME, FULLSCREEN, HWSURFACE$/;"	i
+RAND_SCALE	oldgame.py	/^RAND_SCALE = 0.01$/;"	v
+SCALE	oldgame.py	/^SCALE = (screen_width + screen_height) \/ (640 + 480)$/;"	v
+SCALE	pysic.py	/^    SCALE = 5$/;"	v	class:Object
+SCALE	pysic.py~	/^    SCALE = 5$/;"	v	class:Object
+SCALE	univgame.py	/^SCALE = 20$/;"	v
+SCALE	univgame.py~	/^SCALE = 20$/;"	v
+SCREEN_ATTR	antvspi.py	/^    SCREEN_ATTR = FULLSCREEN | HWSURFACE$/;"	v
+SCREEN_ATTR	antvspi.py	/^    SCREEN_ATTR = NOFRAME$/;"	v
+SCREEN_ATTR	antvspi.py~	/^    SCREEN_ATTR = FULLSCREEN | HWSURFACE$/;"	v
+SCREEN_ATTR	antvspi.py~	/^    SCREEN_ATTR = NOFRAME$/;"	v
+SCREEN_ATTR	oldgame.py	/^    SCREEN_ATTR = 0$/;"	v
+SCREEN_ATTR	oldgame.py	/^    SCREEN_ATTR = FULLSCREEN$/;"	v
+SCREEN_ATTR	oldgame.py	/^    SCREEN_ATTR = NOFRAME$/;"	v
+SCREEN_ATTR	univgame.py	/^    SCREEN_ATTR = 0$/;"	v
+SCREEN_ATTR	univgame.py	/^    SCREEN_ATTR = FULLSCREEN$/;"	v
+SCREEN_ATTR	univgame.py	/^    SCREEN_ATTR = NOFRAME$/;"	v
+SCREEN_ATTR	univgame.py~	/^    SCREEN_ATTR = 0$/;"	v
+SCREEN_ATTR	univgame.py~	/^    SCREEN_ATTR = FULLSCREEN$/;"	v
+SCREEN_ATTR	univgame.py~	/^    SCREEN_ATTR = NOFRAME$/;"	v
+SCREEN_SIZE	antvspi.py	/^    SCREEN_SIZE = (1920, 1080)$/;"	v
+SCREEN_SIZE	antvspi.py	/^    SCREEN_SIZE = (640, 480)$/;"	v
+SCREEN_SIZE	antvspi.py~	/^    SCREEN_SIZE = (1920, 1080)$/;"	v
+SCREEN_SIZE	antvspi.py~	/^    SCREEN_SIZE = (640, 480)$/;"	v
+SCREEN_SIZE	hisantgame.py	/^SCREEN_SIZE = (640, 480)$/;"	v
+SCREEN_SIZE	oldgame.py	/^    SCREEN_SIZE = (0, 0)$/;"	v
+SCREEN_SIZE	oldgame.py	/^    SCREEN_SIZE = (1024, 768)$/;"	v
+SCREEN_SIZE	oldgame.py	/^    SCREEN_SIZE = (1920, 1080)$/;"	v
+SCREEN_SIZE	oldgame.py	/^    SCREEN_SIZE = (640, 480)$/;"	v
+SCREEN_SIZE	univgame.py	/^    SCREEN_SIZE = (0, 0)$/;"	v
+SCREEN_SIZE	univgame.py	/^    SCREEN_SIZE = (1024, 768)$/;"	v
+SCREEN_SIZE	univgame.py	/^    SCREEN_SIZE = (1920, 1080)$/;"	v
+SCREEN_SIZE	univgame.py	/^    SCREEN_SIZE = (640, 480)$/;"	v
+SCREEN_SIZE	univgame.py~	/^    SCREEN_SIZE = (0, 0)$/;"	v
+SCREEN_SIZE	univgame.py~	/^    SCREEN_SIZE = (1024, 768)$/;"	v
+SCREEN_SIZE	univgame.py~	/^    SCREEN_SIZE = (1920, 1080)$/;"	v
+SCREEN_SIZE	univgame.py~	/^    SCREEN_SIZE = (640, 480)$/;"	v
+SCRN_SCALE	univgame.py	/^SCRN_SCALE = (screen_width + screen_height) \/ (640 + 480)$/;"	v
+SCRN_SCALE	univgame.py~	/^SCRN_SCALE = (screen_width + screen_height) \/ (640 + 480)$/;"	v
+SHOW_MODE	oldgame.py	/^SHOW_MODE = sys.argv[1] if len(sys.argv) > 1 else 'small'$/;"	v
+SHOW_MODE	univgame.py	/^SHOW_MODE = sys.argv[1] if len(sys.argv) > 1 else 'small'$/;"	v
+SHOW_MODE	univgame.py~	/^SHOW_MODE = sys.argv[1] if len(sys.argv) > 1 else 'small'$/;"	v
+SLOW_INTERVAL	oldgame.py	/^SLOW_INTERVAL = 6$/;"	v
+SLOW_PERC	oldgame.py	/^SLOW_PERC = 0.994$/;"	v
+SPEED_SCALE	oldgame.py	/^SPEED_SCALE = 1.5   # or 0.05 \/ TIMER_INTERVAL$/;"	v
+Spider	hisantgame.py	/^class Spider(GameEntity):$/;"	c
+State	antvspi.py	/^class State():$/;"	c
+State	antvspi.py~	/^class State():$/;"	c
+State	hisantgame.py	/^class State(object):$/;"	c
+StateMachine	antvspi.py	/^class StateMachine():$/;"	c
+StateMachine	antvspi.py~	/^class StateMachine():$/;"	c
+StateMachine	hisantgame.py	/^class StateMachine(object):$/;"	c
+TIMER_INTERVAL	oldgame.py	/^TIMER_INTERVAL = 0.0008$/;"	v
+TIMER_INTERVAL	pysic.py	/^    TIMER_INTERVAL = .0010$/;"	v	class:Object
+TIMER_INTERVAL	pysic.py~	/^    TIMER_INTERVAL = .0010$/;"	v	class:Object
+TIMER_INTERVAL	univgame.py	/^TIMER_INTERVAL = 0.0010$/;"	v
+TIMER_INTERVAL	univgame.py~	/^TIMER_INTERVAL = 0.0010$/;"	v
+UnitTestVec2D	2DVectorClass.py	/^    class UnitTestVec2D(unittest.TestCase):$/;"	c
+UnitTestVec2D	VectorClass.py	/^    class UnitTestVec2D(unittest.TestCase):$/;"	c
+UnitTestVec3d	3DVectorClass.py	/^	class UnitTestVec3d(unittest.TestCase):$/;"	c
+VECTOR3D	univgame.py	/^VECTOR3D = False$/;"	v
+VECTOR3D	univgame.py~	/^VECTOR3D = False$/;"	v
+Vec2d	2DVectorClass.py	/^class Vec2d(object):$/;"	c
+Vec2d	VectorClass.py	/^class Vec2d(object):$/;"	c
+Vec2d	antvspi.py	/^from VectorClass import Vec2d$/;"	i
+Vec2d	antvspi.py~	/^from VectorClass import Vec2d$/;"	i
+Vec2d	game.py	/^from VectorClass import Vec2d$/;"	i
+Vec2d	hisantgame.py	/^from VectorClass import Vec2d$/;"	i
+Vec2d	swimfisher.py	/^from VectorClass import Vec2d$/;"	i
+Vec2d	swimfisher.py~	/^from VectorClass import Vec2d$/;"	i
+Vec3d	3DVectorClass.py	/^class Vec3d(object):$/;"	c
+Vector	oldgame.py	/^Vector = pysic.Vector3D$/;"	v
+Vector	pysic.py	/^Vector = Vector2D$/;"	v
+Vector	pysic.py~	/^Vector = Vector2D$/;"	v
+Vector	pyvec.py	/^class Vector(object):$/;"	c
+Vector	pyvec.py~	/^class Vector(object):$/;"	c
+Vector	univgame.py	/^Vector = Vector3D if VECTOR3D else Vector2D$/;"	v
+Vector	univgame.py~	/^Vector = Vector3D if VECTOR3D else Vector2D$/;"	v
+Vector2	hisantgame.py	/^Vector2 = Vec2d$/;"	v
+Vector2	swimfisher.py	/^Vector2 = Vec2d$/;"	v
+Vector2	swimfisher.py~	/^Vector2 = Vec2d$/;"	v
+Vector2D	pysic.py	/^from vector import Vector3D, Vector2D, VectorND, to_tuple$/;"	i
+Vector2D	pysic.py~	/^from vector import Vector3D, Vector2D, VectorND, to_tuple$/;"	i
+Vector2D	univgame.py	/^from vector import Vector3D, Vector2D, to_tuple$/;"	i
+Vector2D	univgame.py~	/^from vector import Vector3D, Vector2D, to_tuple$/;"	i
+Vector2D	vector.py	/^class Vector2D(VectorUN):$/;"	c
+Vector3D	pysic.py	/^from vector import Vector3D, Vector2D, VectorND, to_tuple$/;"	i
+Vector3D	pysic.py~	/^from vector import Vector3D, Vector2D, VectorND, to_tuple$/;"	i
+Vector3D	univgame.py	/^from vector import Vector3D, Vector2D, to_tuple$/;"	i
+Vector3D	univgame.py~	/^from vector import Vector3D, Vector2D, to_tuple$/;"	i
+Vector3D	vector.py	/^class Vector3D(VectorUN):$/;"	c
+VectorND	pysic.py	/^from vector import Vector3D, Vector2D, VectorND, to_tuple$/;"	i
+VectorND	pysic.py~	/^from vector import Vector3D, Vector2D, VectorND, to_tuple$/;"	i
+VectorND	vector.py	/^class VectorND(VectorUN):$/;"	c
+VectorUN	vector.py	/^class VectorUN:$/;"	c
+World	antvspi.py	/^class World(object):$/;"	c
+World	antvspi.py~	/^class World(object):$/;"	c
+World	hisantgame.py	/^class World(object):$/;"	c
+World	oldgame.py	/^class World(pysic.World):$/;"	c
+World	pysic.py	/^class World:$/;"	c
+World	pysic.py~	/^class World:$/;"	c
+World	univgame.py	/^class World(pysic.World):$/;"	c
+World	univgame.py~	/^class World(pysic.World):$/;"	c
+__abs__	2DVectorClass.py	/^    def __abs__(self):$/;"	m	class:Vec2d	file:
+__abs__	3DVectorClass.py	/^	def __abs__(self):$/;"	m	class:Vec3d	file:
+__abs__	VectorClass.py	/^    def __abs__(self):$/;"	m	class:Vec2d	file:
+__add__	2DVectorClass.py	/^    def __add__(self, other):$/;"	m	class:Vec2d	file:
+__add__	3DVectorClass.py	/^	def __add__(self, other):$/;"	m	class:Vec3d	file:
+__add__	VectorClass.py	/^    def __add__(self, other):$/;"	m	class:Vec2d	file:
+__add__	movement.py	/^    def __add__(a, b):$/;"	m	class:Coor	file:
+__add__	movement.py~	/^    def __add__(a, b):$/;"	m	class:Coor	file:
+__add__	pyvec.py	/^    __add__ = add$/;"	v	class:Vector
+__add__	pyvec.py~	/^    __add__ = add$/;"	v	class:Vector
+__add__	vector.py	/^    def __add__(self, v):$/;"	m	class:VectorUN	file:
+__and__	2DVectorClass.py	/^    def __and__(self, other):$/;"	m	class:Vec2d	file:
+__and__	3DVectorClass.py	/^	def __and__(self, other):$/;"	m	class:Vec3d	file:
+__and__	VectorClass.py	/^    def __and__(self, other):$/;"	m	class:Vec2d	file:
+__carry	antvspi.py	/^    def __carry(self, image):$/;"	m	class:Ant	file:
+__carry	antvspi.py~	/^    def __carry(self, image):$/;"	m	class:Ant	file:
+__div__	2DVectorClass.py	/^    def __div__(self, other):$/;"	m	class:Vec2d	file:
+__div__	3DVectorClass.py	/^	def __div__(self, other):$/;"	m	class:Vec3d	file:
+__div__	VectorClass.py	/^    def __div__(self, other):$/;"	m	class:Vec2d	file:
+__div__	pyvec.py	/^    __div__ = div$/;"	v	class:Vector
+__div__	pyvec.py~	/^    __div__ = div$/;"	v	class:Vector
+__div__	vector.py	/^    def __div__(self, scale):$/;"	m	class:VectorUN	file:
+__divmod__	2DVectorClass.py	/^    def __divmod__(self, other):$/;"	m	class:Vec2d	file:
+__divmod__	3DVectorClass.py	/^	def __divmod__(self, other):$/;"	m	class:Vec3d	file:
+__divmod__	VectorClass.py	/^    def __divmod__(self, other):$/;"	m	class:Vec2d	file:
+__drop	antvspi.py	/^    def __drop(self, surface):$/;"	m	class:Ant	file:
+__drop	antvspi.py~	/^    def __drop(self, surface):$/;"	m	class:Ant	file:
+__eq__	2DVectorClass.py	/^    def __eq__(self, other):$/;"	m	class:Vec2d	file:
+__eq__	3DVectorClass.py	/^	def __eq__(self, other):$/;"	m	class:Vec3d	file:
+__eq__	VectorClass.py	/^    def __eq__(self, other):$/;"	m	class:Vec2d	file:
+__eq__	vector.py	/^    def __eq__(self, v):$/;"	m	class:VectorUN	file:
+__floordiv__	2DVectorClass.py	/^    def __floordiv__(self, other):$/;"	m	class:Vec2d	file:
+__floordiv__	3DVectorClass.py	/^	def __floordiv__(self, other):$/;"	m	class:Vec3d	file:
+__floordiv__	VectorClass.py	/^    def __floordiv__(self, other):$/;"	m	class:Vec2d	file:
+__getitem__	2DVectorClass.py	/^    def __getitem__(self, key):$/;"	m	class:Vec2d	file:
+__getitem__	3DVectorClass.py	/^	def __getitem__(self, key):$/;"	m	class:Vec3d	file:
+__getitem__	VectorClass.py	/^    def __getitem__(self, key):$/;"	m	class:Vec2d	file:
+__getitem__	antvspi.py	/^    def __getitem__(self, entity_id):$/;"	m	class:World	file:
+__getitem__	antvspi.py~	/^    def __getitem__(self, entity_id):$/;"	m	class:World	file:
+__getstate__	2DVectorClass.py	/^    def __getstate__(self):$/;"	m	class:Vec2d	file:
+__getstate__	3DVectorClass.py	/^	def __getstate__(self):$/;"	m	class:Vec3d	file:
+__getstate__	VectorClass.py	/^    def __getstate__(self):$/;"	m	class:Vec2d	file:
+__iadd__	2DVectorClass.py	/^    def __iadd__(self, other):$/;"	m	class:Vec2d	file:
+__iadd__	3DVectorClass.py	/^	def __iadd__(self, other):$/;"	m	class:Vec3d	file:
+__iadd__	VectorClass.py	/^    def __iadd__(self, other):$/;"	m	class:Vec2d	file:
+__idiv__	2DVectorClass.py	/^    def __idiv__(self, other):$/;"	m	class:Vec2d	file:
+__idiv__	3DVectorClass.py	/^	def __idiv__(self, other):$/;"	m	class:Vec3d	file:
+__idiv__	VectorClass.py	/^    def __idiv__(self, other):$/;"	m	class:Vec2d	file:
+__ifloordiv__	2DVectorClass.py	/^    def __ifloordiv__(self, other):$/;"	m	class:Vec2d	file:
+__ifloordiv__	3DVectorClass.py	/^	def __ifloordiv__(self, other):$/;"	m	class:Vec3d	file:
+__ifloordiv__	VectorClass.py	/^    def __ifloordiv__(self, other):$/;"	m	class:Vec2d	file:
+__imul__	2DVectorClass.py	/^    def __imul__(self, other):$/;"	m	class:Vec2d	file:
+__imul__	3DVectorClass.py	/^	def __imul__(self, other):$/;"	m	class:Vec3d	file:
+__imul__	VectorClass.py	/^    def __imul__(self, other):$/;"	m	class:Vec2d	file:
+__init__	2DVectorClass.py	/^    def __init__(self, x_or_pair, y = None):$/;"	m	class:Vec2d
+__init__	3DVectorClass.py	/^	def __init__(self, x_or_triple, y = None, z = None):$/;"	m	class:Vec3d
+__init__	VectorClass.py	/^    def __init__(self, x_or_pair, y = None):$/;"	m	class:Vec2d
+__init__	antvspi.py	/^    def __init__(self, ant):$/;"	m	class:AntExploring
+__init__	antvspi.py	/^    def __init__(self, ant):$/;"	m	class:AntSeeking
+__init__	antvspi.py	/^    def __init__(self, entities={}):$/;"	m	class:World
+__init__	antvspi.py	/^    def __init__(self, name):$/;"	m	class:State
+__init__	antvspi.py	/^    def __init__(self, states={}, active_state=None):$/;"	m	class:StateMachine
+__init__	antvspi.py	/^    def __init__(self, world, image):$/;"	m	class:Ant
+__init__	antvspi.py	/^    def __init__(self, world, name, image):$/;"	m	class:GameEntity
+__init__	antvspi.py~	/^    def __init__(self, ant):$/;"	m	class:AntExploring
+__init__	antvspi.py~	/^    def __init__(self, ant):$/;"	m	class:AntSeeking
+__init__	antvspi.py~	/^    def __init__(self, entities={}):$/;"	m	class:World
+__init__	antvspi.py~	/^    def __init__(self, name):$/;"	m	class:State
+__init__	antvspi.py~	/^    def __init__(self, states={}, active_state=None):$/;"	m	class:StateMachine
+__init__	antvspi.py~	/^    def __init__(self, world, image):$/;"	m	class:Ant
+__init__	antvspi.py~	/^    def __init__(self, world, name, image):$/;"	m	class:GameEntity
+__init__	hisantgame.py	/^    def __init__(self):$/;"	m	class:StateMachine
+__init__	hisantgame.py	/^    def __init__(self):$/;"	m	class:World
+__init__	hisantgame.py	/^    def __init__(self, ant):$/;"	m	class:AntStateDelivering
+__init__	hisantgame.py	/^    def __init__(self, ant):$/;"	m	class:AntStateExploring
+__init__	hisantgame.py	/^    def __init__(self, ant):$/;"	m	class:AntStateHunting
+__init__	hisantgame.py	/^    def __init__(self, ant):$/;"	m	class:AntStateSeeking
+__init__	hisantgame.py	/^    def __init__(self, name):$/;"	m	class:State
+__init__	hisantgame.py	/^    def __init__(self, world, image):$/;"	m	class:Ant
+__init__	hisantgame.py	/^    def __init__(self, world, image):$/;"	m	class:Leaf
+__init__	hisantgame.py	/^    def __init__(self, world, image):$/;"	m	class:Spider
+__init__	hisantgame.py	/^    def __init__(self, world, name, image):$/;"	m	class:GameEntity
+__init__	movement.py	/^    def __init__(self, *l):$/;"	m	class:Coor
+__init__	movement.py~	/^    def __init__(self, *l):$/;"	m	class:Coor
+__init__	pysic.py	/^    def __init__(self, mass=0, pos=INIT_VECTOR, spd=INIT_VECTOR, linknod=None):$/;"	m	class:Object
+__init__	pysic.py	/^    def __init__(self, objlst=[]):$/;"	m	class:World
+__init__	pysic.py~	/^    def __init__(self, mass=0, pos=INIT_VECTOR, spd=INIT_VECTOR, linknod=None):$/;"	m	class:Object
+__init__	pysic.py~	/^    def __init__(self, objlst=[]):$/;"	m	class:World
+__init__	pysic2.py	/^    def __init__(self, x, y):$/;"	m	class:vector
+__init__	pyvec.py	/^    def __init__(self, x=0, y=0):$/;"	m	class:Vector
+__init__	pyvec.py~	/^    def __init__(self, x=0, y=0):$/;"	m	class:Vector
+__init__	vector.py	/^    def __init__(self, *xy):$/;"	m	class:Vector2D
+__init__	vector.py	/^    def __init__(self, *xyz):$/;"	m	class:Vector3D
+__init__	vector.py	/^    def __init__(self, *xyz):$/;"	m	class:VectorND
+__invert__	2DVectorClass.py	/^    def __invert__(self):$/;"	m	class:Vec2d	file:
+__invert__	3DVectorClass.py	/^	def __invert__(self):$/;"	m	class:Vec3d	file:
+__invert__	VectorClass.py	/^    def __invert__(self):$/;"	m	class:Vec2d	file:
+__isub__	2DVectorClass.py	/^    def __isub__(self, other):$/;"	m	class:Vec2d	file:
+__isub__	3DVectorClass.py	/^	def __isub__(self, other):$/;"	m	class:Vec3d	file:
+__isub__	VectorClass.py	/^    def __isub__(self, other):$/;"	m	class:Vec2d	file:
+__itruediv__	2DVectorClass.py	/^    def __itruediv__(self, other):$/;"	m	class:Vec2d	file:
+__itruediv__	3DVectorClass.py	/^	def __itruediv__(self, other):$/;"	m	class:Vec3d	file:
+__itruediv__	VectorClass.py	/^    def __itruediv__(self, other):$/;"	m	class:Vec2d	file:
+__len__	2DVectorClass.py	/^    def __len__(self):$/;"	m	class:Vec2d	file:
+__len__	3DVectorClass.py	/^	def __len__(self):$/;"	m	class:Vec3d	file:
+__len__	VectorClass.py	/^    def __len__(self):$/;"	m	class:Vec2d	file:
+__lshift__	2DVectorClass.py	/^    def __lshift__(self, other):$/;"	m	class:Vec2d	file:
+__lshift__	3DVectorClass.py	/^	def __lshift__(self, other):$/;"	m	class:Vec3d	file:
+__lshift__	VectorClass.py	/^    def __lshift__(self, other):$/;"	m	class:Vec2d	file:
+__mod__	2DVectorClass.py	/^    def __mod__(self, other):$/;"	m	class:Vec2d	file:
+__mod__	3DVectorClass.py	/^	def __mod__(self, other):$/;"	m	class:Vec3d	file:
+__mod__	VectorClass.py	/^    def __mod__(self, other):$/;"	m	class:Vec2d	file:
+__mul__	2DVectorClass.py	/^    def __mul__(self, other):$/;"	m	class:Vec2d	file:
+__mul__	3DVectorClass.py	/^	def __mul__(self, other):$/;"	m	class:Vec3d	file:
+__mul__	VectorClass.py	/^    def __mul__(self, other):$/;"	m	class:Vec2d	file:
+__mul__	movement.py	/^    def __mul__(a, k):$/;"	m	class:Coor	file:
+__mul__	movement.py~	/^    def __mul__(a, k):$/;"	m	class:Coor	file:
+__mul__	pymat.py	/^    def __mul__(a, b):$/;"	m	class:array	file:
+__mul__	pyvec.py	/^    __mul__ = mul$/;"	v	class:Vector
+__mul__	pyvec.py~	/^    __mul__ = mul$/;"	v	class:Vector
+__mul__	vector.py	/^    def __mul__(self, scale):$/;"	m	class:VectorUN	file:
+__ne__	2DVectorClass.py	/^    def __ne__(self, other):$/;"	m	class:Vec2d	file:
+__ne__	3DVectorClass.py	/^	def __ne__(self, other):$/;"	m	class:Vec3d	file:
+__ne__	VectorClass.py	/^    def __ne__(self, other):$/;"	m	class:Vec2d	file:
+__ne__	vector.py	/^    def __ne__(self, v):$/;"	m	class:VectorUN	file:
+__neg__	2DVectorClass.py	/^    def __neg__(self):$/;"	m	class:Vec2d	file:
+__neg__	3DVectorClass.py	/^	def __neg__(self):$/;"	m	class:Vec3d	file:
+__neg__	VectorClass.py	/^    def __neg__(self):$/;"	m	class:Vec2d	file:
+__neg__	vector.py	/^    def __neg__(self):$/;"	m	class:VectorUN	file:
+__nonzero__	2DVectorClass.py	/^    def __nonzero__(self):$/;"	m	class:Vec2d	file:
+__nonzero__	3DVectorClass.py	/^	def __nonzero__(self):$/;"	m	class:Vec3d	file:
+__nonzero__	VectorClass.py	/^    def __nonzero__(self):$/;"	m	class:Vec2d	file:
+__or__	2DVectorClass.py	/^    def __or__(self, other):$/;"	m	class:Vec2d	file:
+__or__	3DVectorClass.py	/^	def __or__(self, other):$/;"	m	class:Vec3d	file:
+__or__	VectorClass.py	/^    def __or__(self, other):$/;"	m	class:Vec2d	file:
+__pos__	2DVectorClass.py	/^    def __pos__(self):$/;"	m	class:Vec2d	file:
+__pos__	3DVectorClass.py	/^	def __pos__(self):$/;"	m	class:Vec3d	file:
+__pos__	VectorClass.py	/^    def __pos__(self):$/;"	m	class:Vec2d	file:
+__pow__	2DVectorClass.py	/^    def __pow__(self, other):$/;"	m	class:Vec2d	file:
+__pow__	3DVectorClass.py	/^	def __pow__(self, other):$/;"	m	class:Vec3d	file:
+__pow__	VectorClass.py	/^    def __pow__(self, other):$/;"	m	class:Vec2d	file:
+__radd__	2DVectorClass.py	/^    __radd__ = __add__$/;"	v	class:Vec2d
+__radd__	3DVectorClass.py	/^	__radd__ = __add__$/;"	v	class:Vec3d
+__radd__	VectorClass.py	/^    __radd__ = __add__$/;"	v	class:Vec2d
+__rand__	2DVectorClass.py	/^    __rand__ = __and__$/;"	v	class:Vec2d
+__rand__	3DVectorClass.py	/^	__rand__ = __and__$/;"	v	class:Vec3d
+__rand__	VectorClass.py	/^    __rand__ = __and__$/;"	v	class:Vec2d
+__rdiv__	2DVectorClass.py	/^    def __rdiv__(self, other):$/;"	m	class:Vec2d	file:
+__rdiv__	3DVectorClass.py	/^	def __rdiv__(self, other):$/;"	m	class:Vec3d	file:
+__rdiv__	VectorClass.py	/^    def __rdiv__(self, other):$/;"	m	class:Vec2d	file:
+__rdivmod__	2DVectorClass.py	/^    def __rdivmod__(self, other):$/;"	m	class:Vec2d	file:
+__rdivmod__	3DVectorClass.py	/^	def __rdivmod__(self, other):$/;"	m	class:Vec3d	file:
+__rdivmod__	VectorClass.py	/^    def __rdivmod__(self, other):$/;"	m	class:Vec2d	file:
+__repr__	2DVectorClass.py	/^    def __repr__(self):$/;"	m	class:Vec2d	file:
+__repr__	3DVectorClass.py	/^	def __repr__(self):$/;"	m	class:Vec3d	file:
+__repr__	VectorClass.py	/^    def __repr__(self):$/;"	m	class:Vec2d	file:
+__rfloordiv__	2DVectorClass.py	/^    def __rfloordiv__(self, other):$/;"	m	class:Vec2d	file:
+__rfloordiv__	3DVectorClass.py	/^	def __rfloordiv__(self, other):$/;"	m	class:Vec3d	file:
+__rfloordiv__	VectorClass.py	/^    def __rfloordiv__(self, other):$/;"	m	class:Vec2d	file:
+__rlshift__	2DVectorClass.py	/^    def __rlshift__(self, other):$/;"	m	class:Vec2d	file:
+__rlshift__	3DVectorClass.py	/^	def __rlshift__(self, other):$/;"	m	class:Vec3d	file:
+__rlshift__	VectorClass.py	/^    def __rlshift__(self, other):$/;"	m	class:Vec2d	file:
+__rmod__	2DVectorClass.py	/^    def __rmod__(self, other):$/;"	m	class:Vec2d	file:
+__rmod__	3DVectorClass.py	/^	def __rmod__(self, other):$/;"	m	class:Vec3d	file:
+__rmod__	VectorClass.py	/^    def __rmod__(self, other):$/;"	m	class:Vec2d	file:
+__rmul__	2DVectorClass.py	/^    __rmul__ = __mul__$/;"	v	class:Vec2d
+__rmul__	3DVectorClass.py	/^	__rmul__ = __mul__$/;"	v	class:Vec3d
+__rmul__	VectorClass.py	/^    __rmul__ = __mul__$/;"	v	class:Vec2d
+__ror__	2DVectorClass.py	/^    __ror__ = __or__$/;"	v	class:Vec2d
+__ror__	3DVectorClass.py	/^	__ror__ = __or__$/;"	v	class:Vec3d
+__ror__	VectorClass.py	/^    __ror__ = __or__$/;"	v	class:Vec2d
+__rpow__	2DVectorClass.py	/^    def __rpow__(self, other):$/;"	m	class:Vec2d	file:
+__rpow__	3DVectorClass.py	/^	def __rpow__(self, other):$/;"	m	class:Vec3d	file:
+__rpow__	VectorClass.py	/^    def __rpow__(self, other):$/;"	m	class:Vec2d	file:
+__rrshift__	2DVectorClass.py	/^    def __rrshift__(self, other):$/;"	m	class:Vec2d	file:
+__rrshift__	3DVectorClass.py	/^	def __rrshift__(self, other):$/;"	m	class:Vec3d	file:
+__rrshift__	VectorClass.py	/^    def __rrshift__(self, other):$/;"	m	class:Vec2d	file:
+__rshift__	2DVectorClass.py	/^    def __rshift__(self, other):$/;"	m	class:Vec2d	file:
+__rshift__	3DVectorClass.py	/^	def __rshift__(self, other):$/;"	m	class:Vec3d	file:
+__rshift__	VectorClass.py	/^    def __rshift__(self, other):$/;"	m	class:Vec2d	file:
+__rsub__	2DVectorClass.py	/^    def __rsub__(self, other):$/;"	m	class:Vec2d	file:
+__rsub__	3DVectorClass.py	/^	def __rsub__(self, other):$/;"	m	class:Vec3d	file:
+__rsub__	VectorClass.py	/^    def __rsub__(self, other):$/;"	m	class:Vec2d	file:
+__rtruediv__	2DVectorClass.py	/^    def __rtruediv__(self, other):$/;"	m	class:Vec2d	file:
+__rtruediv__	3DVectorClass.py	/^	def __rtruediv__(self, other):$/;"	m	class:Vec3d	file:
+__rtruediv__	VectorClass.py	/^    def __rtruediv__(self, other):$/;"	m	class:Vec2d	file:
+__rxor__	2DVectorClass.py	/^    __rxor__ = __xor__$/;"	v	class:Vec2d
+__rxor__	3DVectorClass.py	/^	__rxor__ = __xor__$/;"	v	class:Vec3d
+__rxor__	VectorClass.py	/^    __rxor__ = __xor__$/;"	v	class:Vec2d
+__setangle	2DVectorClass.py	/^    def __setangle(self, angle_degrees):$/;"	m	class:Vec2d	file:
+__setangle	VectorClass.py	/^    def __setangle(self, angle):$/;"	m	class:Vec2d	file:
+__setangle_around_x	3DVectorClass.py	/^	def __setangle_around_x(self, angle_degrees):$/;"	m	class:Vec3d	file:
+__setangle_around_y	3DVectorClass.py	/^	def __setangle_around_y(self, angle_degrees):$/;"	m	class:Vec3d	file:
+__setangle_around_z	3DVectorClass.py	/^	def __setangle_around_z(self, angle_degrees):$/;"	m	class:Vec3d	file:
+__setitem__	2DVectorClass.py	/^    def __setitem__(self, key, value):$/;"	m	class:Vec2d	file:
+__setitem__	3DVectorClass.py	/^	def __setitem__(self, key, value):$/;"	m	class:Vec3d	file:
+__setitem__	VectorClass.py	/^    def __setitem__(self, key, value):$/;"	m	class:Vec2d	file:
+__setlength	2DVectorClass.py	/^    def __setlength(self, value):$/;"	m	class:Vec2d	file:
+__setlength	3DVectorClass.py	/^	def __setlength(self, value):$/;"	m	class:Vec3d	file:
+__setlength	VectorClass.py	/^    def __setlength(self, value):$/;"	m	class:Vec2d	file:
+__setstate__	2DVectorClass.py	/^    def __setstate__(self, dict):$/;"	m	class:Vec2d	file:
+__setstate__	3DVectorClass.py	/^	def __setstate__(self, dict):$/;"	m	class:Vec3d	file:
+__setstate__	VectorClass.py	/^    def __setstate__(self, dict):$/;"	m	class:Vec2d	file:
+__slots__	2DVectorClass.py	/^    __slots__ = ['x', 'y']$/;"	v	class:Vec2d
+__slots__	3DVectorClass.py	/^	__slots__ = ['x', 'y', 'z']$/;"	v	class:Vec3d
+__slots__	VectorClass.py	/^    __slots__ = ['x', 'y']$/;"	v	class:Vec2d
+__slots__	pyvec.py	/^    __slots__ = ['x', 'y']$/;"	v	class:Vector
+__slots__	pyvec.py~	/^    __slots__ = ['x', 'y']$/;"	v	class:Vector
+__str__	antvspi.py	/^    def __str__(self):$/;"	m	class:GameEntity	file:
+__str__	antvspi.py~	/^    def __str__(self):$/;"	m	class:GameEntity	file:
+__str__	pysic.py	/^    def __str__(self):$/;"	m	class:Object	file:
+__str__	pysic.py	/^    def __str__(self):$/;"	m	class:World	file:
+__str__	pysic.py~	/^    def __str__(self):$/;"	m	class:Object	file:
+__str__	pysic.py~	/^    def __str__(self):$/;"	m	class:World	file:
+__str__	pyvec.py	/^    def __str__(self):$/;"	m	class:Vector	file:
+__str__	pyvec.py~	/^    def __str__(self):$/;"	m	class:Vector	file:
+__str__	vector.py	/^    def __str__(self):$/;"	m	class:VectorUN	file:
+__sub__	2DVectorClass.py	/^    def __sub__(self, other):$/;"	m	class:Vec2d	file:
+__sub__	3DVectorClass.py	/^	def __sub__(self, other):$/;"	m	class:Vec3d	file:
+__sub__	VectorClass.py	/^    def __sub__(self, other):$/;"	m	class:Vec2d	file:
+__sub__	movement.py	/^    def __sub__(a, b):$/;"	m	class:Coor	file:
+__sub__	movement.py~	/^    def __sub__(a, b):$/;"	m	class:Coor	file:
+__sub__	pyvec.py	/^    __sub__ = sub$/;"	v	class:Vector
+__sub__	pyvec.py~	/^    __sub__ = sub$/;"	v	class:Vector
+__sub__	vector.py	/^    def __sub__(self, v):$/;"	m	class:VectorUN	file:
+__truediv__	2DVectorClass.py	/^    def __truediv__(self, other):$/;"	m	class:Vec2d	file:
+__truediv__	3DVectorClass.py	/^	def __truediv__(self, other):$/;"	m	class:Vec3d	file:
+__truediv__	VectorClass.py	/^    def __truediv__(self, other):$/;"	m	class:Vec2d	file:
+__xor__	2DVectorClass.py	/^    def __xor__(self, other):$/;"	m	class:Vec2d	file:
+__xor__	3DVectorClass.py	/^	def __xor__(self, other):$/;"	m	class:Vec3d	file:
+__xor__	VectorClass.py	/^    def __xor__(self, other):$/;"	m	class:Vec2d	file:
+_cons	pymat.py	/^    def _cons(a, *b):$/;"	m	class:array
+_copy	pymat.py	/^    def _copy(a):$/;"	m	class:array
+_io	2DVectorClass.py	/^    def _io(self, other, f):$/;"	m	class:Vec2d
+_io	3DVectorClass.py	/^	def _io(self, other, f):$/;"	m	class:Vec3d
+_io	VectorClass.py	/^    def _io(self, other, f):$/;"	m	class:Vec2d
+_o2	2DVectorClass.py	/^    def _o2(self, other, f):$/;"	m	class:Vec2d
+_o2	3DVectorClass.py	/^	def _o2(self, other, f):$/;"	m	class:Vec3d
+_o2	VectorClass.py	/^    def _o2(self, other, f):$/;"	m	class:Vec2d
+_r_o2	2DVectorClass.py	/^    def _r_o2(self, other, f):$/;"	m	class:Vec2d
+_r_o2	3DVectorClass.py	/^	def _r_o2(self, other, f):$/;"	m	class:Vec3d
+_r_o2	VectorClass.py	/^    def _r_o2(self, other, f):$/;"	m	class:Vec2d
+a	pymat.py	/^    a = matrix([array([12, 4]), array([4, 8])])$/;"	v
+abs	pyvec.py	/^    def abs(v):$/;"	m	class:Vector
+abs	pyvec.py~	/^    def abs(v):$/;"	m	class:Vector
+abs	vector.py	/^    def abs(self):$/;"	m	class:VectorUN
+absolutely	vector.py	/^    def absolutely(v):$/;"	m	class:Vector2D
+add	pyvec.py	/^    def add(a, b):$/;"	m	class:Vector
+add	pyvec.py~	/^    def add(a, b):$/;"	m	class:Vector
+add_entity	hisantgame.py	/^    def add_entity(self, entity):$/;"	m	class:World
+add_object	pysic.py	/^    def add_object(self, obj, virtually=False):$/;"	m	class:World
+add_object	pysic.py~	/^    def add_object(self, obj, virtually=False):$/;"	m	class:World
+add_state	antvspi.py	/^    def add_state(self, state):$/;"	m	class:StateMachine
+add_state	antvspi.py~	/^    def add_state(self, state):$/;"	m	class:StateMachine
+add_state	hisantgame.py	/^    def add_state(self, state):$/;"	m	class:StateMachine
+all_colors	all_color.py	/^all_colors = pygame.Surface((4096,4096), depth=24)$/;"	v
+all_colors	all_color.py~	/^all_colors = pygame.Surface((4096,4096), depth=24)$/;"	v
+angle	2DVectorClass.py	/^    angle = property(get_angle, __setangle, None, "gets or sets the angle of a vector")$/;"	v	class:Vec2d
+angle	VectorClass.py	/^    angle = property(get_angle, __setangle, None, "gets or sets the angle of a vector")$/;"	v	class:Vec2d
+angle	randart2.py	/^            angle = (x\/639.)*pi*2.$/;"	v
+angle	randart2.py~	/^            angle = (x\/639.)*pi*2.$/;"	v
+angle	vector.py	/^    def angle(self):$/;"	m	class:Vector2D
+angle_around_x	3DVectorClass.py	/^	angle_around_x = property(get_angle_around_x, __setangle_around_x, None, "gets or sets the angle of a vector in the YZ plane")$/;"	v	class:Vec3d
+angle_around_y	3DVectorClass.py	/^	angle_around_y = property(get_angle_around_y, __setangle_around_y, None, "gets or sets the angle of a vector in the ZX plane")$/;"	v	class:Vec3d
+angle_around_z	3DVectorClass.py	/^	angle_around_z = property(get_angle_around_z, __setangle_around_z, None, "gets or sets the angle of a vector in the XY plane")$/;"	v	class:Vec3d
+angular_force	game.py	/^    angular_force = 0$/;"	v
+angular_force_scale	game.py	/^angular_force_scale = 0.0005$/;"	v
+ant_image	antvspi.py	/^    ant_image = pygame.image.load('ant.bmp').convert_alpha()$/;"	v
+ant_image	antvspi.py~	/^    ant_image = pygame.image.load('ant.bmp').convert_alpha()$/;"	v
+append	antvspi.py	/^    def append(self, entity):$/;"	m	class:World
+append	antvspi.py~	/^    def append(self, entity):$/;"	m	class:World
+argv	antvspi.py	/^from sys import argv$/;"	i
+argv	antvspi.py~	/^from sys import argv$/;"	i
+array	pymat.py	/^class array(list):$/;"	c
+b	pymat.py	/^    b = matrix([array([1, 4]), array([6, 2])])$/;"	v
+background	game.py	/^    background = 'sushiplate.bmp'$/;"	v
+background	game.py	/^    background = None$/;"	v
+background	movement.py	/^background = 'sushiplate.bmp'$/;"	v
+background	movement.py	/^background = pygame.image.load(background).convert()$/;"	v
+background	movement.py~	/^background = 'sushiplate.bmp'$/;"	v
+background	movement.py~	/^background = pygame.image.load(background).convert()$/;"	v
+background	oldgame.py	/^    background = None$/;"	v
+background	oldgame.py	/^    background = pygame.image.load(BACKGROUND).convert()$/;"	v
+background	swimfisher.py	/^background = pygame.image.load(background_image_filename).convert()$/;"	v
+background	swimfisher.py~	/^background = pygame.image.load(background_image_filename).convert()$/;"	v
+background	univgame.py	/^    background = None$/;"	v
+background	univgame.py	/^    background = pygame.image.load(BACKGROUND).convert()$/;"	v
+background	univgame.py~	/^    background = None$/;"	v
+background	univgame.py~	/^    background = pygame.image.load(BACKGROUND).convert()$/;"	v
+background_image_filename	swimfisher.py	/^background_image_filename = 'sushiplate.bmp'$/;"	v
+background_image_filename	swimfisher.py~	/^background_image_filename = 'sushiplate.bmp'$/;"	v
+bitten	hisantgame.py	/^    def bitten(self):$/;"	m	class:Spider
+blend_color	blend_color.py	/^def blend_color(color1, color2, blend_factor):$/;"	f
+blend_color	blend_color.py~	/^def blend_color(color1, color2, blend_factor):$/;"	f
+blend_color	color.py	/^def blend_color(color1, color2, blend_factor):$/;"	f
+carry	hisantgame.py	/^    def carry(self, image):$/;"	m	class:Ant
+check_conditions	antvspi.py	/^    def check_conditions(self):$/;"	m	class:AntExploring
+check_conditions	antvspi.py	/^    def check_conditions(self):$/;"	m	class:AntSeeking
+check_conditions	antvspi.py	/^    def check_conditions(self):$/;"	m	class:State
+check_conditions	antvspi.py~	/^    def check_conditions(self):$/;"	m	class:AntExploring
+check_conditions	antvspi.py~	/^    def check_conditions(self):$/;"	m	class:AntSeeking
+check_conditions	antvspi.py~	/^    def check_conditions(self):$/;"	m	class:State
+check_conditions	hisantgame.py	/^    def check_conditions(self):$/;"	m	class:AntStateDelivering
+check_conditions	hisantgame.py	/^    def check_conditions(self):$/;"	m	class:AntStateExploring
+check_conditions	hisantgame.py	/^    def check_conditions(self):$/;"	m	class:AntStateHunting
+check_conditions	hisantgame.py	/^    def check_conditions(self):$/;"	m	class:AntStateSeeking
+check_conditions	hisantgame.py	/^    def check_conditions(self):$/;"	m	class:State
+choice	hisantgame.py	/^from random import randint, choice$/;"	i
+clock	antvspi.py	/^    clock = pygame.time.Clock()$/;"	v
+clock	antvspi.py~	/^    clock = pygame.time.Clock()$/;"	v
+clock	game.py	/^clock = pygame.time.Clock()$/;"	v
+clock	movement.py	/^clock = pygame.time.Clock()$/;"	v
+clock	movement.py~	/^clock = pygame.time.Clock()$/;"	v
+clock	swimfisher.py	/^clock = pygame.time.Clock()$/;"	v
+clock	swimfisher.py~	/^clock = pygame.time.Clock()$/;"	v
+close_entities	antvspi.py	/^    def close_entities(self, name, location, range=100):$/;"	m	class:World
+close_entities	antvspi.py~	/^    def close_entities(self, name, location, range=100):$/;"	m	class:World
+close_entity	antvspi.py	/^    def close_entity(self, name, location, range=100):$/;"	m	class:World
+close_entity	antvspi.py	/^    def close_entity(self, name, range=100):$/;"	m	class:GameEntity
+close_entity	antvspi.py~	/^    def close_entity(self, name, location, range=100):$/;"	m	class:World
+close_entity	antvspi.py~	/^    def close_entity(self, name, range=100):$/;"	m	class:GameEntity
+color	blend_color.py	/^    color = blend_color(color1, color2 , factor)$/;"	v
+color	blend_color.py~	/^    color = blend_color(color1, color2 , factor)$/;"	v
+color	test_color.py	/^color = [127, 127, 127]$/;"	v
+color	test_color.py~	/^color = [127, 127, 127]$/;"	v
+color1	blend_color.py	/^color1 = (221, 99, 20)$/;"	v
+color1	blend_color.py~	/^color1 = (221, 99, 20)$/;"	v
+color2	blend_color.py	/^color2 = (96, 130, 51)$/;"	v
+color2	blend_color.py~	/^color2 = (96, 130, 51)$/;"	v
+cons2d	pymat.py	/^    def cons2d(*lst):$/;"	m	class:matrix
+convert_to_basis	2DVectorClass.py	/^    def convert_to_basis(self, x_vector, y_vector):$/;"	m	class:Vec2d
+convert_to_basis	3DVectorClass.py	/^	def convert_to_basis(self, x_vector, y_vector, z_vector):$/;"	m	class:Vec3d
+convert_to_basis	VectorClass.py	/^    def convert_to_basis(self, x_vector, y_vector):$/;"	m	class:Vec2d
+create_scales	test_color.py	/^def create_scales(height):$/;"	f
+create_scales	test_color.py~	/^def create_scales(height):$/;"	f
+cross	2DVectorClass.py	/^    def cross(self, other):$/;"	m	class:Vec2d
+cross	3DVectorClass.py	/^	def cross(self, other):$/;"	m	class:Vec3d
+cross	VectorClass.py	/^    def cross(self, other):$/;"	m	class:Vec2d
+cur_pos	univgame.py	/^            cur_pos = Position(*xy2xyz(*curr_mouse))$/;"	v
+cur_pos	univgame.py~	/^            cur_pos = Position(*xy2xyz(*curr_mouse))$/;"	v
+curr_mouse	univgame.py	/^            curr_mouse = event.pos$/;"	v
+curr_mouse	univgame.py~	/^            curr_mouse = event.pos$/;"	v
+decorated	vector.py	/^        def decorated(self, *xyz):$/;"	f	function:zero_if_zero.tag
+decorated	vector.py	/^    def decorated(self, *xyz):$/;"	f	function:init_get_xyz
+dif_height	univgame.py	/^        dif_height = screen_height - background_height$/;"	v
+dif_height	univgame.py~	/^        dif_height = screen_height - background_height$/;"	v
+dif_spd	univgame.py	/^            dif_spd = (cur_pos - mot_pos) * (1 \/ mouse_time \/ TIMER_INTERVAL)$/;"	v
+dif_spd	univgame.py~	/^            dif_spd = (cur_pos - mot_pos) * (1 \/ mouse_time \/ TIMER_INTERVAL)$/;"	v
+dif_width	univgame.py	/^        dif_width = screen_width - background_width$/;"	v
+dif_width	univgame.py~	/^        dif_width = screen_width - background_width$/;"	v
+div	pyvec.py	/^    def div(a, b):$/;"	m	class:Vector
+div	pyvec.py	/^    def div(a, k):$/;"	m	class:Vector
+div	pyvec.py~	/^    def div(a, b):$/;"	m	class:Vector
+div	pyvec.py~	/^    def div(a, k):$/;"	m	class:Vector
+do_actions	antvspi.py	/^    def do_actions(self):$/;"	m	class:AntExploring
+do_actions	antvspi.py	/^    def do_actions(self):$/;"	m	class:AntSeeking
+do_actions	antvspi.py	/^    def do_actions(self):$/;"	m	class:State
+do_actions	antvspi.py~	/^    def do_actions(self):$/;"	m	class:AntExploring
+do_actions	antvspi.py~	/^    def do_actions(self):$/;"	m	class:AntSeeking
+do_actions	antvspi.py~	/^    def do_actions(self):$/;"	m	class:State
+do_actions	hisantgame.py	/^    def do_actions(self):$/;"	m	class:AntStateExploring
+do_actions	hisantgame.py	/^    def do_actions(self):$/;"	m	class:AntStateHunting
+do_actions	hisantgame.py	/^    def do_actions(self):$/;"	m	class:State
+dot	2DVectorClass.py	/^    def dot(self, other):$/;"	m	class:Vec2d
+dot	3DVectorClass.py	/^	def dot(self, other):$/;"	m	class:Vec3d
+dot	VectorClass.py	/^    def dot(self, other):$/;"	m	class:Vec2d
+dot_product	pysic2.py	/^    def dot_product(self, v):$/;"	m	class:vector
+dot_product	vector.py	/^    def dot_product(self, v):$/;"	m	class:Vector2D
+dot_shadow	vector.py	/^    def dot_shadow(self, a):$/;"	m	class:Vector2D
+dot_shadow	vector.py	/^    def dot_shadow(self, a):$/;"	m	class:Vector3D
+dot_shadow_un	vector.py	/^    def dot_shadow_un(self, a):$/;"	m	class:Vector2D
+drop	hisantgame.py	/^    def drop(self, surface):$/;"	m	class:Ant
+enter_actions	antvspi.py	/^    def enter_actions(self):$/;"	m	class:AntExploring
+enter_actions	antvspi.py	/^    def enter_actions(self):$/;"	m	class:AntSeeking
+enter_actions	antvspi.py~	/^    def enter_actions(self):$/;"	m	class:AntExploring
+enter_actions	antvspi.py~	/^    def enter_actions(self):$/;"	m	class:AntSeeking
+entry_actions	antvspi.py	/^    def entry_actions(self):$/;"	m	class:State
+entry_actions	antvspi.py~	/^    def entry_actions(self):$/;"	m	class:State
+entry_actions	hisantgame.py	/^    def entry_actions(self):$/;"	m	class:AntStateDelivering
+entry_actions	hisantgame.py	/^    def entry_actions(self):$/;"	m	class:AntStateExploring
+entry_actions	hisantgame.py	/^    def entry_actions(self):$/;"	m	class:AntStateHunting
+entry_actions	hisantgame.py	/^    def entry_actions(self):$/;"	m	class:AntStateSeeking
+entry_actions	hisantgame.py	/^    def entry_actions(self):$/;"	m	class:State
+event	blend_color.py	/^        event = pygame.event.wait()$/;"	v
+event	blend_color.py~	/^        event = pygame.event.wait()$/;"	v
+event	test_color.py	/^        event = pygame.event.wait()$/;"	v
+event	test_color.py~	/^        event = pygame.event.wait()$/;"	v
+exit	blend_color.py	/^from sys import exit$/;"	i
+exit	blend_color.py~	/^from sys import exit$/;"	i
+exit	movement.py	/^from sys import exit$/;"	i
+exit	movement.py~	/^from sys import exit$/;"	i
+exit	randart.py	/^from sys import exit$/;"	i
+exit	randart.py~	/^from sys import exit$/;"	i
+exit	randart2.py	/^from sys import exit$/;"	i
+exit	randart2.py~	/^from sys import exit$/;"	i
+exit	swimfisher.py	/^from sys import exit$/;"	i
+exit	swimfisher.py~	/^from sys import exit$/;"	i
+exit	test_color.py	/^from sys import exit$/;"	i
+exit	test_color.py~	/^from sys import exit$/;"	i
+exit_actions	antvspi.py	/^    def exit_actions(self):$/;"	m	class:State
+exit_actions	antvspi.py~	/^    def exit_actions(self):$/;"	m	class:State
+exit_actions	hisantgame.py	/^    def exit_actions(self):$/;"	m	class:AntStateHunting
+exit_actions	hisantgame.py	/^    def exit_actions(self):$/;"	m	class:State
+factor	blend_color.py	/^        factor = x \/ 639.0$/;"	v
+factor	blend_color.py	/^factor = 0.$/;"	v
+factor	blend_color.py~	/^        factor = x \/ 639.0$/;"	v
+factor	blend_color.py~	/^factor = 0.$/;"	v
+font	oldgame.py	/^font = pygame.font.SysFont('Arial', 16)$/;"	v
+font	univgame.py	/^font = pygame.font.SysFont('Arial', 16)$/;"	v
+font	univgame.py~	/^font = pygame.font.SysFont('Arial', 16)$/;"	v
+font_height	oldgame.py	/^font_height = font.get_linesize()$/;"	v
+font_height	univgame.py	/^font_height = font.get_linesize()$/;"	v
+font_height	univgame.py~	/^font_height = font.get_linesize()$/;"	v
+forced	pysic.py	/^    def forced(self, force):$/;"	m	class:Object
+forced	pysic.py~	/^    def forced(self, force):$/;"	m	class:Object
+get	antvspi.py	/^    get = __getitem__$/;"	v	class:World
+get	antvspi.py~	/^    get = __getitem__$/;"	v	class:World
+get	hisantgame.py	/^    def get(self, entity_id):$/;"	m	class:World
+get_angle	2DVectorClass.py	/^    def get_angle(self):$/;"	m	class:Vec2d
+get_angle	VectorClass.py	/^    def get_angle(self):$/;"	m	class:Vec2d
+get_angle_around_x	3DVectorClass.py	/^	def get_angle_around_x(self):$/;"	m	class:Vec3d
+get_angle_around_y	3DVectorClass.py	/^	def get_angle_around_y(self):$/;"	m	class:Vec3d
+get_angle_around_z	3DVectorClass.py	/^	def get_angle_around_z(self):$/;"	m	class:Vec3d
+get_angle_between	2DVectorClass.py	/^    def get_angle_between(self, other):$/;"	m	class:Vec2d
+get_angle_between	3DVectorClass.py	/^	def get_angle_between(self, other):$/;"	m	class:Vec3d
+get_angle_between	VectorClass.py	/^    def get_angle_between(self, other):$/;"	m	class:Vec2d
+get_close_entity	hisantgame.py	/^    def get_close_entity(self, name, location, range=100.):$/;"	m	class:World
+get_dist_sqrd	2DVectorClass.py	/^    def get_dist_sqrd(self, other):$/;"	m	class:Vec2d
+get_dist_sqrd	3DVectorClass.py	/^	def get_dist_sqrd(self, other):$/;"	m	class:Vec3d
+get_dist_sqrd	VectorClass.py	/^    def get_dist_sqrd(self, other):$/;"	m	class:Vec2d
+get_distance	2DVectorClass.py	/^    def get_distance(self, other):$/;"	m	class:Vec2d
+get_distance	3DVectorClass.py	/^	def get_distance(self, other):$/;"	m	class:Vec3d
+get_distance	VectorClass.py	/^    def get_distance(self, other):$/;"	m	class:Vec2d
+get_length	2DVectorClass.py	/^    def get_length(self):$/;"	m	class:Vec2d
+get_length	3DVectorClass.py	/^	def get_length(self):$/;"	m	class:Vec3d
+get_length	VectorClass.py	/^    def get_length(self):$/;"	m	class:Vec2d
+get_length_sqrd	2DVectorClass.py	/^    def get_length_sqrd(self):$/;"	m	class:Vec2d
+get_length_sqrd	3DVectorClass.py	/^	def get_length_sqrd(self): $/;"	m	class:Vec3d
+get_length_sqrd	VectorClass.py	/^    def get_length_sqrd(self):$/;"	m	class:Vec2d
+get_plane_az	vector.py	/^    def get_plane_az(self, az):$/;"	m	class:Vector3D
+get_xy	oldgame.py	/^        def get_xy(pos):$/;"	f	function:quit_game
+getrand	antvspi.py	/^        def getrand(q, w):$/;"	f	function:GameEntity.random_destination
+getrand	antvspi.py~	/^        def getrand(q, w):$/;"	f	function:GameEntity.random_destination
+grav_acc_to	pysic.py	/^    def grav_acc_to(self, obj):$/;"	m	class:World
+grav_acc_to	pysic.py~	/^    def grav_acc_to(self, obj):$/;"	m	class:World
+heading	swimfisher.py	/^    heading = Vector2(heading_x, heading_y)$/;"	v
+heading	swimfisher.py~	/^    heading = Vector2(heading_x, heading_y)$/;"	v
+heading_x	swimfisher.py	/^    heading_x = sin(sprite_rotation*pi\/180.)$/;"	v
+heading_x	swimfisher.py~	/^    heading_x = sin(sprite_rotation*pi\/180.)$/;"	v
+heading_y	swimfisher.py	/^    heading_y = cos(sprite_rotation*pi\/180.)$/;"	v
+heading_y	swimfisher.py~	/^    heading_y = cos(sprite_rotation*pi\/180.)$/;"	v
+init_get_xyz	vector.py	/^def init_get_xyz(fun):$/;"	f
+init_mass	univgame.py	/^init_mass = 1$/;"	v
+init_mass	univgame.py~	/^init_mass = 1$/;"	v
+interpolate_to	2DVectorClass.py	/^    def interpolate_to(self, other, range):$/;"	m	class:Vec2d
+interpolate_to	3DVectorClass.py	/^	def interpolate_to(self, other, range):$/;"	m	class:Vec3d
+interpolate_to	VectorClass.py	/^    def interpolate_to(self, other, range):$/;"	m	class:Vec2d
+intone	pysic2.py	/^    def intone(self):$/;"	m	class:vector
+key_direction	game.py	/^    key_direction = Vec2d(0, 0)$/;"	v
+key_force	game.py	/^    key_force = key_direction * key_force_scale$/;"	v
+key_force_scale	game.py	/^key_force_scale = 0.001$/;"	v
+length	2DVectorClass.py	/^    length = property(get_length, __setlength, None, "gets or sets the magnitude of the vector")$/;"	v	class:Vec2d
+length	3DVectorClass.py	/^	length = property(get_length, __setlength, None, "gets or sets the magnitude of the vector")$/;"	v	class:Vec3d
+length	VectorClass.py	/^    length = property(get_length, __setlength, None, "gets or sets the magnitude of the vector")$/;"	v	class:Vec2d
+linelength	game.py	/^        linelength = angular_force * 50000$/;"	v
+linelength	game.py	/^        linelength = key_force.x * 50000$/;"	v
+linelength	game.py	/^        linelength = key_force.y * 50000$/;"	v
+linevector	game.py	/^        linevector = ((size.x*9\/10, size.y\/2), (size.x*9\/10, size.y\/2-linelength))$/;"	v
+linevector	game.py	/^        linevector = ((size.x\/10, size.y\/2), (size.x\/10, size.y\/2+linelength))$/;"	v
+linevector	game.py	/^        linevector = ((size.x\/2, size.y\/2), (size.x\/2, size.y\/2-linelength))$/;"	v
+linevector	game.py	/^        linevector = ((size.x\/2, size.y\/2), (size.x\/2-linelength, size.y\/2))$/;"	v
+m	pymat.py	/^    m = matrix.cons2d([[12, 5], [2, 0], [4, 3]])$/;"	v
+math	2DVectorClass.py	/^import math$/;"	i
+math	3DVectorClass.py	/^import math$/;"	i
+math	VectorClass.py	/^import math$/;"	i
+math	antvspi.py	/^import math$/;"	i
+math	antvspi.py~	/^import math$/;"	i
+math	pyvec.py	/^import math$/;"	i
+math	pyvec.py~	/^import math$/;"	i
+matrix	pymat.py	/^class matrix(array):$/;"	c
+mot_pos	univgame.py	/^            mot_pos = Position(*xy2xyz(*prev_mouse))$/;"	v
+mot_pos	univgame.py~	/^            mot_pos = Position(*xy2xyz(*prev_mouse))$/;"	v
+motion_mouse	univgame.py	/^            motion_mouse = event.pos$/;"	v
+motion_mouse	univgame.py~	/^            motion_mouse = event.pos$/;"	v
+mouse_image	oldgame.py	/^mouse_image = pygame.image.load('fugu.bmp').convert_alpha()$/;"	v
+mouse_image	univgame.py	/^mouse_image = pygame.image.load('fugu.bmp').convert_alpha()$/;"	v
+mouse_image	univgame.py~	/^mouse_image = pygame.image.load('fugu.bmp').convert_alpha()$/;"	v
+mouse_time	oldgame.py	/^mouse_time = None$/;"	v
+mouse_time	univgame.py	/^            mouse_time = 0$/;"	v
+mouse_time	univgame.py	/^mouse_time = None$/;"	v
+mouse_time	univgame.py~	/^            mouse_time = 0$/;"	v
+mouse_time	univgame.py~	/^mouse_time = None$/;"	v
+move	pysic.py	/^    def move(self, dt):$/;"	m	class:World
+move	pysic.py	/^    def move(self, dt, world=None):$/;"	m	class:Object
+move	pysic.py~	/^    def move(self, dt):$/;"	m	class:World
+move	pysic.py~	/^    def move(self, dt, world=None):$/;"	m	class:Object
+movement_direction	swimfisher.py	/^        movement_direction = +1.$/;"	v
+movement_direction	swimfisher.py	/^        movement_direction = -1.$/;"	v
+movement_direction	swimfisher.py	/^    movement_direction = 0.$/;"	v
+movement_direction	swimfisher.py~	/^        movement_direction = +1.$/;"	v
+movement_direction	swimfisher.py~	/^        movement_direction = -1.$/;"	v
+movement_direction	swimfisher.py~	/^    movement_direction = 0.$/;"	v
+mul	pyvec.py	/^    def mul(a, k):$/;"	m	class:Vector
+mul	pyvec.py~	/^    def mul(a, k):$/;"	m	class:Vector
+mul2d	pymat.py	/^    def mul2d(a, b):$/;"	m	class:matrix
+myfun	antvspi.py	/^            def myfun(r, w=1):$/;"	f	function:GameEntity.random_destination.getrand
+myfun	antvspi.py~	/^            def myfun(r, w=1):$/;"	f	function:GameEntity.random_destination.getrand
+new_sprite	game.py	/^        new_sprite = pygame.Surface(size).convert_alpha()$/;"	v
+new_sprite	game.py	/^    new_sprite = sprite$/;"	v
+norm	pyvec.py	/^    def norm(v):$/;"	m	class:Vector
+norm	pyvec.py~	/^    def norm(v):$/;"	m	class:Vector
+normalize_return_length	2DVectorClass.py	/^    def normalize_return_length(self):$/;"	m	class:Vec2d
+normalize_return_length	3DVectorClass.py	/^	def normalize_return_length(self):$/;"	m	class:Vec3d
+normalize_return_length	VectorClass.py	/^    def normalize_return_length(self):$/;"	m	class:Vec2d
+normalized	2DVectorClass.py	/^    def normalized(self):$/;"	m	class:Vec2d
+normalized	3DVectorClass.py	/^	def normalized(self):$/;"	m	class:Vec3d
+normalized	VectorClass.py	/^    def normalized(self):$/;"	m	class:Vec2d
+obj	univgame.py	/^            obj = Object(mass=init_mass, pos=cur_pos, spd=dif_spd)$/;"	v
+obj	univgame.py~	/^            obj = Object(mass=init_mass, pos=cur_pos, spd=dif_spd)$/;"	v
+obj1	pysic.py	/^    obj1 = Object(mass=1, pos=Vector(24, 0), spd=Vector(0, 50))$/;"	v	class:Object
+obj1	pysic.py~	/^    obj1 = Object(mass=1, pos=Vector(24, 0), spd=Vector(0, 50))$/;"	v	class:Object
+obj1	univgame.py	/^obj1 = Object(mass=8, pos=Vector(5, 0), spd=Vector(0, 10))$/;"	v
+obj1	univgame.py~	/^obj1 = Object(mass=8, pos=Vector(5, 0), spd=Vector(0, 10))$/;"	v
+obj2	pysic.py	/^    obj2 = Object(mass=3, pos=Vector(-8, 0), spd=Vector(0, 0))$/;"	v	class:Object
+obj2	pysic.py~	/^    obj2 = Object(mass=3, pos=Vector(-8, 0), spd=Vector(0, 0))$/;"	v	class:Object
+obj2	univgame.py	/^obj2 = Object(mass=8, pos=Vector(-5, 0), spd=Vector(0, -10))$/;"	v
+obj2	univgame.py~	/^obj2 = Object(mass=8, pos=Vector(-5, 0), spd=Vector(0, -10))$/;"	v
+op	vector.py	/^import operator as op$/;"	i
+operator	2DVectorClass.py	/^import operator$/;"	i
+operator	3DVectorClass.py	/^import operator$/;"	i
+operator	VectorClass.py	/^import operator$/;"	i
+p	movement.py	/^    p = p0 + (-screen.get_width(), -screen.get_height())$/;"	v
+p	movement.py	/^    p = p0 + (-screen.get_width(), 0)$/;"	v
+p	movement.py	/^    p = p0 + (-screen.get_width(), screen.get_height())$/;"	v
+p	movement.py	/^    p = p0 + (0, -screen.get_height())$/;"	v
+p	movement.py	/^    p = p0 + (0, screen.get_height())$/;"	v
+p	movement.py	/^    p = p0 + (screen.get_width(), -screen.get_height())$/;"	v
+p	movement.py	/^    p = p0 + (screen.get_width(), 0)$/;"	v
+p	movement.py	/^    p = p0 + (screen.get_width(), screen.get_height())$/;"	v
+p	movement.py~	/^    p = p0 + (-screen.get_width(), -screen.get_height())$/;"	v
+p	movement.py~	/^    p = p0 + (-screen.get_width(), 0)$/;"	v
+p	movement.py~	/^    p = p0 + (-screen.get_width(), screen.get_height())$/;"	v
+p	movement.py~	/^    p = p0 + (0, -screen.get_height())$/;"	v
+p	movement.py~	/^    p = p0 + (0, screen.get_height())$/;"	v
+p	movement.py~	/^    p = p0 + (screen.get_width(), -screen.get_height())$/;"	v
+p	movement.py~	/^    p = p0 + (screen.get_width(), 0)$/;"	v
+p	movement.py~	/^    p = p0 + (screen.get_width(), screen.get_height())$/;"	v
+perpendicular	2DVectorClass.py	/^    def perpendicular(self):$/;"	m	class:Vec2d
+perpendicular	VectorClass.py	/^    def perpendicular(self):$/;"	m	class:Vec2d
+perpendicular_normal	2DVectorClass.py	/^    def perpendicular_normal(self):$/;"	m	class:Vec2d
+perpendicular_normal	VectorClass.py	/^    def perpendicular_normal(self):$/;"	m	class:Vec2d
+pi	randart2.py	/^from math import pi$/;"	i
+pi	randart2.py~	/^from math import pi$/;"	i
+pickle	2DVectorClass.py	/^    import pickle$/;"	i
+pickle	3DVectorClass.py	/^	import pickle$/;"	i
+pickle	VectorClass.py	/^    import pickle$/;"	i
+points	randart2.py	/^            points = []$/;"	v
+points	randart2.py	/^points = []$/;"	v
+points	randart2.py~	/^            points = []$/;"	v
+points	randart2.py~	/^points = []$/;"	v
+pos	movement.py	/^pos = Coor((screen.get_width() \/ 2, screen.get_height() \/ 2))$/;"	v
+pos	movement.py~	/^pos = Coor((screen.get_width() \/ 2, screen.get_height() \/ 2))$/;"	v
+pos	test_color.py	/^        pos = ( int((color[component]\/255.)*639), component*80+40 )$/;"	v
+pos	test_color.py~	/^        pos = ( int((color[component]\/255.)*639), component*80+40 )$/;"	v
+pressed_keys	game.py	/^    pressed_keys = pygame.key.get_pressed()$/;"	v
+pressed_keys	swimfisher.py	/^    pressed_keys = pygame.key.get_pressed()$/;"	v
+pressed_keys	swimfisher.py~	/^    pressed_keys = pygame.key.get_pressed()$/;"	v
+pressed_mouse	swimfisher.py	/^    pressed_mouse = pygame.mouse.get_pressed()$/;"	v
+pressed_mouse	swimfisher.py~	/^    pressed_mouse = pygame.mouse.get_pressed()$/;"	v
+prev_mouse	univgame.py	/^            prev_mouse = last_mouse$/;"	v
+prev_mouse	univgame.py~	/^            prev_mouse = last_mouse$/;"	v
+process	antvspi.py	/^    def process(self, time_passed):$/;"	m	class:GameEntity
+process	antvspi.py	/^    def process(self, time_passed):$/;"	m	class:World
+process	antvspi.py~	/^    def process(self, time_passed):$/;"	m	class:GameEntity
+process	antvspi.py~	/^    def process(self, time_passed):$/;"	m	class:World
+process	hisantgame.py	/^    def process(self, time_passed):$/;"	m	class:GameEntity
+process	hisantgame.py	/^    def process(self, time_passed):$/;"	m	class:Spider
+process	hisantgame.py	/^    def process(self, time_passed):$/;"	m	class:World
+projection	2DVectorClass.py	/^    def projection(self, other):$/;"	m	class:Vec2d
+projection	3DVectorClass.py	/^	def projection(self, other):$/;"	m	class:Vec3d
+projection	VectorClass.py	/^    def projection(self, other):$/;"	m	class:Vec2d
+pygame	all_color.py	/^import pygame$/;"	i
+pygame	all_color.py~	/^import pygame$/;"	i
+pygame	antvspi.py	/^import pygame$/;"	i
+pygame	antvspi.py~	/^import pygame$/;"	i
+pygame	blend_color.py	/^import pygame$/;"	i
+pygame	blend_color.py~	/^import pygame$/;"	i
+pygame	game.py	/^import pygame$/;"	i
+pygame	hisantgame.py	/^import pygame$/;"	i
+pygame	movement.py	/^import pygame$/;"	i
+pygame	movement.py~	/^import pygame$/;"	i
+pygame	oldgame.py	/^import pygame$/;"	i
+pygame	pysic.py	/^    import pygame$/;"	i
+pygame	pysic.py~	/^    import pygame$/;"	i
+pygame	randart.py	/^import pygame$/;"	i
+pygame	randart.py~	/^import pygame$/;"	i
+pygame	randart2.py	/^import pygame$/;"	i
+pygame	randart2.py~	/^import pygame$/;"	i
+pygame	swimfisher.py	/^import pygame$/;"	i
+pygame	swimfisher.py~	/^import pygame$/;"	i
+pygame	test_color.py	/^import pygame$/;"	i
+pygame	test_color.py~	/^import pygame$/;"	i
+pygame	univgame.py	/^import pygame$/;"	i
+pygame	univgame.py~	/^import pygame$/;"	i
+pysic	oldgame.py	/^import pysic$/;"	i
+pysic	univgame.py	/^import pysic$/;"	i
+pysic	univgame.py~	/^import pysic$/;"	i
+quit_game	oldgame.py	/^def quit_game():$/;"	f
+quit_game	univgame.py	/^def quit_game():$/;"	f
+quit_game	univgame.py~	/^def quit_game():$/;"	f
+randint	antvspi.py	/^from random import randint$/;"	i
+randint	antvspi.py~	/^from random import randint$/;"	i
+randint	hisantgame.py	/^from random import randint, choice$/;"	i
+randint	randart.py	/^from random import randint$/;"	i
+randint	randart.py~	/^from random import randint$/;"	i
+random	oldgame.py	/^from random import random$/;"	i
+random	univgame.py	/^from random import random$/;"	i
+random	univgame.py~	/^from random import random$/;"	i
+random_ant	antvspi.py	/^    def random_ant():$/;"	f
+random_ant	antvspi.py~	/^    def random_ant():$/;"	f
+random_destination	antvspi.py	/^    def random_destination(self):$/;"	m	class:AntSeeking
+random_destination	antvspi.py	/^    def random_destination(self):$/;"	m	class:GameEntity
+random_destination	antvspi.py~	/^    def random_destination(self):$/;"	m	class:AntSeeking
+random_destination	antvspi.py~	/^    def random_destination(self):$/;"	m	class:GameEntity
+random_destination	hisantgame.py	/^    def random_destination(self):$/;"	m	class:AntStateExploring
+randval	oldgame.py	/^        def randval():$/;"	f	function:quit_game
+rc	randart2.py	/^            rc = (randint(0,255), randint(0,255), randint(0,255))$/;"	v
+rc	randart2.py~	/^            rc = (randint(0,255), randint(0,255), randint(0,255))$/;"	v
+reached_destination	antvspi.py	/^    def reached_destination(self):$/;"	m	class:GameEntity
+reached_destination	antvspi.py~	/^    def reached_destination(self):$/;"	m	class:GameEntity
+reduce	vector.py	/^from functools import reduce$/;"	i
+remove	antvspi.py	/^    def remove(self, entity):$/;"	m	class:World
+remove	antvspi.py~	/^    def remove(self, entity):$/;"	m	class:World
+remove_entity	hisantgame.py	/^    def remove_entity(self, entity):$/;"	m	class:World
+render	antvspi.py	/^    def render(self, surface):$/;"	m	class:Ant
+render	antvspi.py	/^    def render(self, surface):$/;"	m	class:GameEntity
+render	antvspi.py	/^    def render(self, surface):$/;"	m	class:World
+render	antvspi.py~	/^    def render(self, surface):$/;"	m	class:Ant
+render	antvspi.py~	/^    def render(self, surface):$/;"	m	class:GameEntity
+render	antvspi.py~	/^    def render(self, surface):$/;"	m	class:World
+render	hisantgame.py	/^    def render(self, surface):$/;"	m	class:Ant
+render	hisantgame.py	/^    def render(self, surface):$/;"	m	class:GameEntity
+render	hisantgame.py	/^    def render(self, surface):$/;"	m	class:Spider
+render	hisantgame.py	/^    def render(self, surface):$/;"	m	class:World
+response_to	vector.py	/^def response_to(obj, elm):$/;"	f
+ror2d	pymat.py	/^    def ror2d(a):$/;"	m	class:matrix
+rotate	2DVectorClass.py	/^    def rotate(self, angle_degrees):$/;"	m	class:Vec2d
+rotate	VectorClass.py	/^    def rotate(self, angle):$/;"	m	class:Vec2d
+rotate_around_x	3DVectorClass.py	/^	def rotate_around_x(self, angle_degrees):$/;"	m	class:Vec3d
+rotate_around_y	3DVectorClass.py	/^	def rotate_around_y(self, angle_degrees):$/;"	m	class:Vec3d
+rotate_around_z	3DVectorClass.py	/^	def rotate_around_z(self, angle_degrees):$/;"	m	class:Vec3d
+rotated	2DVectorClass.py	/^    def rotated(self, angle_degrees):$/;"	m	class:Vec2d
+rotated	VectorClass.py	/^    def rotated(self, angle):$/;"	m	class:Vec2d
+rotated_around_x	3DVectorClass.py	/^	def rotated_around_x(self, angle_degrees):$/;"	m	class:Vec3d
+rotated_around_y	3DVectorClass.py	/^	def rotated_around_y(self, angle_degrees):$/;"	m	class:Vec3d
+rotated_around_z	3DVectorClass.py	/^	def rotated_around_z(self, angle_degrees):$/;"	m	class:Vec3d
+rotated_sprite	game.py	/^    rotated_sprite = pygame.transform.rotate(new_sprite, -degrees(sprite_angle))$/;"	v
+rotated_sprite	swimfisher.py	/^    rotated_sprite = pygame.transform.rotate(sprite, sprite_rotation)$/;"	v
+rotated_sprite	swimfisher.py~	/^    rotated_sprite = pygame.transform.rotate(sprite, sprite_rotation)$/;"	v
+rotation_direction	swimfisher.py	/^        rotation_direction = +1.$/;"	v
+rotation_direction	swimfisher.py	/^        rotation_direction = -1.$/;"	v
+rotation_direction	swimfisher.py	/^    rotation_direction = 0.$/;"	v
+rotation_direction	swimfisher.py	/^    rotation_direction = pygame.mouse.get_rel()[0]\/5.0$/;"	v
+rotation_direction	swimfisher.py~	/^        rotation_direction = +1.$/;"	v
+rotation_direction	swimfisher.py~	/^        rotation_direction = -1.$/;"	v
+rotation_direction	swimfisher.py~	/^    rotation_direction = 0.$/;"	v
+rotation_direction	swimfisher.py~	/^    rotation_direction = pygame.mouse.get_rel()[0]\/5.0$/;"	v
+rp	randart2.py	/^            rp = (randint(0,639), randint(0,479))$/;"	v
+rp	randart2.py~	/^            rp = (randint(0,639), randint(0,479))$/;"	v
+rr	randart2.py	/^            rr = randint(1, 200)$/;"	v
+rr	randart2.py~	/^            rr = randint(1, 200)$/;"	v
+rs	randart2.py	/^            rs = (639-randint(rp[0], 639), 479-randint(rp[1], 479))$/;"	v
+rs	randart2.py~	/^            rs = (639-randint(rp[0], 639), 479-randint(rp[1], 479))$/;"	v
+run	hisantgame.py	/^def run():$/;"	f
+screen	antvspi.py	/^    screen = pygame.display.set_mode(SCREEN_SIZE, SCREEN_ATTR, 32)$/;"	v
+screen	antvspi.py~	/^    screen = pygame.display.set_mode(SCREEN_SIZE, SCREEN_ATTR, 32)$/;"	v
+screen	blend_color.py	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	blend_color.py~	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	game.py	/^    screen = ((640, 480), DOUBLEBUF | NOFRAME, 32)$/;"	v
+screen	game.py	/^    screen = (1920, 1080), DOUBLEBUF | FULLSCREEN | HWSURFACE, 32$/;"	v
+screen	game.py	/^screen = pygame.display.set_mode(*screen)$/;"	v
+screen	movement.py	/^screen = pygame.display.set_mode((1920, 1080), DOUBLEBUF | FULLSCREEN | HWSURFACE, 32)$/;"	v
+screen	movement.py~	/^screen = pygame.display.set_mode((1920, 1080), DOUBLEBUF | FULLSCREEN | HWSURFACE, 32)$/;"	v
+screen	oldgame.py	/^screen = pygame.display.set_mode(SCREEN_SIZE, SCREEN_ATTR, 32)$/;"	v
+screen	pysic.py	/^    screen = pygame.display.set_mode((1024, 768), NOFRAME, 32)$/;"	v	class:Object
+screen	pysic.py~	/^    screen = pygame.display.set_mode((1024, 768), NOFRAME, 32)$/;"	v	class:Object
+screen	randart.py	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	randart.py~	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	randart2.py	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	randart2.py~	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	swimfisher.py	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	swimfisher.py~	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	test_color.py	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	test_color.py~	/^screen = pygame.display.set_mode((640, 480), 0, 32)$/;"	v
+screen	univgame.py	/^    screen = pygame.display.set_mode(SCREEN_SIZE, SCREEN_ATTR, 32)$/;"	v
+screen	univgame.py~	/^    screen = pygame.display.set_mode(SCREEN_SIZE, SCREEN_ATTR, 32)$/;"	v
+setUp	2DVectorClass.py	/^        def setUp(self):$/;"	m	class:.UnitTestVec2D
+setUp	3DVectorClass.py	/^		def setUp(self):$/;"	m	class:.UnitTestVec3d
+setUp	VectorClass.py	/^        def setUp(self):$/;"	m	class:.UnitTestVec2D
+set_destination	antvspi.py	/^    def set_destination(self, destination):$/;"	m	class:GameEntity
+set_destination	antvspi.py~	/^    def set_destination(self, destination):$/;"	m	class:GameEntity
+set_state	antvspi.py	/^    def set_state(self, new_state_name):$/;"	m	class:StateMachine
+set_state	antvspi.py~	/^    def set_state(self, new_state_name):$/;"	m	class:StateMachine
+set_state	hisantgame.py	/^    def set_state(self, new_state_name):$/;"	m	class:StateMachine
+show	oldgame.py	/^    def show(self, screen):$/;"	m	class:Object
+show	oldgame.py	/^    def show(self, screen):$/;"	m	class:World
+show	univgame.py	/^    def show(self, screen):$/;"	m	class:Object
+show	univgame.py	/^    def show(self, screen):$/;"	m	class:World
+show	univgame.py~	/^    def show(self, screen):$/;"	m	class:Object
+show	univgame.py~	/^    def show(self, screen):$/;"	m	class:World
+show_at	oldgame.py	/^def show_at(pos):$/;"	f
+show_pix	univgame.py	/^def show_pix(screen, xyz, col=(255,255,255)):$/;"	f
+show_pix	univgame.py~	/^def show_pix(screen, xyz, col=(255,255,255)):$/;"	f
+show_world	oldgame.py	/^def show_world(screen):$/;"	f
+show_world	univgame.py	/^def show_world(screen, dt=0):$/;"	f
+show_world	univgame.py~	/^def show_world(screen, dt=0):$/;"	f
+size	game.py	/^        size = Vec2d(new_sprite.get_size())$/;"	v
+size	game.py	/^    size = Vec2d(rotated_sprite.get_size())$/;"	v
+sleep	movement.py	/^from time import sleep$/;"	i
+sleep	movement.py~	/^from time import sleep$/;"	i
+sleep	pysic.py	/^    from time import sleep$/;"	i
+sleep	pysic.py~	/^    from time import sleep$/;"	i
+sleep	randart.py	/^from time import sleep$/;"	i
+sleep	randart.py~	/^from time import sleep$/;"	i
+sleep	randart2.py	/^from time import sleep$/;"	i
+sleep	randart2.py~	/^from time import sleep$/;"	i
+slow_i	oldgame.py	/^slow_i = SLOW_INTERVAL$/;"	v
+speed	movement.py	/^speed = Coor((0.4, 0.3))*6$/;"	v
+speed	movement.py~	/^speed = Coor((0.4, 0.3))$/;"	v
+speed_average	pysic.py	/^    def speed_average(spd1, spd2, factor):$/;"	m	class:Object
+speed_average	pysic.py~	/^    def speed_average(spd1, spd2, factor):$/;"	m	class:Object
+speed_follow	pysic.py	/^    def speed_follow(self, obj, dt, acv):$/;"	m	class:Object
+speed_follow	pysic.py~	/^    def speed_follow(self, obj, dt, acv):$/;"	m	class:Object
+speed_move	pysic.py	/^    def speed_move(self, dt):$/;"	m	class:Object
+speed_move	pysic.py~	/^    def speed_move(self, dt):$/;"	m	class:Object
+speed_up_with	pysic.py	/^    def speed_up_with(self, his_mass, dot_spd):$/;"	m	class:Object
+speed_up_with	pysic.py~	/^    def speed_up_with(self, his_mass, dot_spd):$/;"	m	class:Object
+sprite	game.py	/^sprite = 'fugu.bmp'$/;"	v
+sprite	game.py	/^sprite = pygame.image.load(sprite).convert_alpha()$/;"	v
+sprite	movement.py	/^sprite = 'fugu.bmp'$/;"	v
+sprite	movement.py	/^sprite = pygame.image.load(sprite)$/;"	v
+sprite	movement.py~	/^sprite = 'fugu.bmp'$/;"	v
+sprite	movement.py~	/^sprite = pygame.image.load(sprite)$/;"	v
+sprite	swimfisher.py	/^sprite = pygame.image.load(sprite_image_filename).convert_alpha()$/;"	v
+sprite	swimfisher.py	/^sprite = pygame.transform.rotate(sprite, 90)$/;"	v
+sprite	swimfisher.py~	/^sprite = pygame.image.load(sprite_image_filename).convert_alpha()$/;"	v
+sprite	swimfisher.py~	/^sprite = pygame.transform.rotate(sprite, 90)$/;"	v
+sprite_angle	game.py	/^sprite_angle = 0$/;"	v
+sprite_angular_speed	game.py	/^sprite_angular_speed = 0$/;"	v
+sprite_draw_pos	swimfisher.py	/^    sprite_draw_pos = Vector2(sprite_pos.x-w\/2, sprite_pos.y-h\/2)$/;"	v
+sprite_draw_pos	swimfisher.py~	/^    sprite_draw_pos = Vector2(sprite_pos.x-w\/2, sprite_pos.y-h\/2)$/;"	v
+sprite_image_filename	swimfisher.py	/^sprite_image_filename = 'fugu.bmp'$/;"	v
+sprite_image_filename	swimfisher.py~	/^sprite_image_filename = 'fugu.bmp'$/;"	v
+sprite_pos	game.py	/^sprite_pos = Vec2d(screen.get_size()) \/ 2$/;"	v
+sprite_pos	swimfisher.py	/^sprite_pos = Vector2(200, 150)$/;"	v
+sprite_pos	swimfisher.py~	/^sprite_pos = Vector2(200, 150)$/;"	v
+sprite_rotation	swimfisher.py	/^sprite_rotation = 0.$/;"	v
+sprite_rotation	swimfisher.py~	/^sprite_rotation = 0.$/;"	v
+sprite_rotation_speed	swimfisher.py	/^sprite_rotation_speed = 360.$/;"	v
+sprite_rotation_speed	swimfisher.py~	/^sprite_rotation_speed = 360.$/;"	v
+sprite_speed	game.py	/^sprite_speed = Vec2d(0, 0)$/;"	v
+sprite_speed	swimfisher.py	/^sprite_speed = 300.$/;"	v
+sprite_speed	swimfisher.py~	/^sprite_speed = 300.$/;"	v
+sys	oldgame.py	/^import sys$/;"	i
+sys	pysic.py	/^    import sys$/;"	i
+sys	pysic.py~	/^    import sys$/;"	i
+sys	univgame.py	/^import sys$/;"	i
+sys	univgame.py~	/^import sys$/;"	i
+tag	vector.py	/^    def tag(fun):$/;"	f	function:zero_if_zero
+testAngles	2DVectorClass.py	/^        def testAngles(self):$/;"	m	class:.UnitTestVec2D
+testAngles	3DVectorClass.py	/^		def testAngles(self):			 $/;"	m	class:.UnitTestVec3d
+testAngles	VectorClass.py	/^        def testAngles(self):$/;"	m	class:.UnitTestVec2D
+testComparison	2DVectorClass.py	/^        def testComparison(self):$/;"	m	class:.UnitTestVec2D
+testComparison	3DVectorClass.py	/^		def testComparison(self):$/;"	m	class:.UnitTestVec3d
+testComparison	VectorClass.py	/^        def testComparison(self):$/;"	m	class:.UnitTestVec2D
+testCreationAndAccess	2DVectorClass.py	/^        def testCreationAndAccess(self):$/;"	m	class:.UnitTestVec2D
+testCreationAndAccess	3DVectorClass.py	/^		def testCreationAndAccess(self):$/;"	m	class:.UnitTestVec3d
+testCreationAndAccess	VectorClass.py	/^        def testCreationAndAccess(self):$/;"	m	class:.UnitTestVec2D
+testCross	2DVectorClass.py	/^        def testCross(self):$/;"	m	class:.UnitTestVec2D
+testCross	3DVectorClass.py	/^		def testCross(self):$/;"	m	class:.UnitTestVec3d
+testCross	VectorClass.py	/^        def testCross(self):$/;"	m	class:.UnitTestVec2D
+testHighLevel	2DVectorClass.py	/^        def testHighLevel(self):$/;"	m	class:.UnitTestVec2D
+testHighLevel	3DVectorClass.py	/^		def testHighLevel(self):$/;"	m	class:.UnitTestVec3d
+testHighLevel	VectorClass.py	/^        def testHighLevel(self):$/;"	m	class:.UnitTestVec2D
+testInplace	2DVectorClass.py	/^        def testInplace(self):$/;"	m	class:.UnitTestVec2D
+testInplace	3DVectorClass.py	/^		def testInplace(self):$/;"	m	class:.UnitTestVec3d
+testInplace	VectorClass.py	/^        def testInplace(self):$/;"	m	class:.UnitTestVec2D
+testLength	2DVectorClass.py	/^        def testLength(self):$/;"	m	class:.UnitTestVec2D
+testLength	3DVectorClass.py	/^		def testLength(self):$/;"	m	class:.UnitTestVec3d
+testLength	VectorClass.py	/^        def testLength(self):$/;"	m	class:.UnitTestVec2D
+testMath	2DVectorClass.py	/^        def testMath(self):$/;"	m	class:.UnitTestVec2D
+testMath	3DVectorClass.py	/^		def testMath(self):$/;"	m	class:.UnitTestVec3d
+testMath	VectorClass.py	/^        def testMath(self):$/;"	m	class:.UnitTestVec2D
+testPickle	2DVectorClass.py	/^        def testPickle(self):$/;"	m	class:.UnitTestVec2D
+testPickle	3DVectorClass.py	/^		def testPickle(self):$/;"	m	class:.UnitTestVec3d
+testPickle	VectorClass.py	/^        def testPickle(self):$/;"	m	class:.UnitTestVec2D
+testReverseMath	2DVectorClass.py	/^        def testReverseMath(self):$/;"	m	class:.UnitTestVec2D
+testReverseMath	3DVectorClass.py	/^		def testReverseMath(self):$/;"	m	class:.UnitTestVec3d
+testReverseMath	VectorClass.py	/^        def testReverseMath(self):$/;"	m	class:.UnitTestVec2D
+testUnary	2DVectorClass.py	/^        def testUnary(self):$/;"	m	class:.UnitTestVec2D
+testUnary	3DVectorClass.py	/^		def testUnary(self):$/;"	m	class:.UnitTestVec3d
+testUnary	VectorClass.py	/^        def testUnary(self):$/;"	m	class:.UnitTestVec2D
+think	antvspi.py	/^    def think(self):$/;"	m	class:StateMachine
+think	antvspi.py~	/^    def think(self):$/;"	m	class:StateMachine
+think	hisantgame.py	/^    def think(self):$/;"	m	class:StateMachine
+time	oldgame.py	/^import time$/;"	i
+time	univgame.py	/^import time$/;"	i
+time	univgame.py~	/^import time$/;"	i
+time_passed	game.py	/^    time_passed = clock.tick(60)$/;"	v
+time_passed	movement.py	/^    time_passed = clock.tick()$/;"	v
+time_passed	movement.py~	/^    time_passed = clock.tick()$/;"	v
+time_passed	swimfisher.py	/^    time_passed = clock.tick()$/;"	v
+time_passed	swimfisher.py~	/^    time_passed = clock.tick()$/;"	v
+time_passed_seconds	swimfisher.py	/^    time_passed_seconds = time_passed \/ 1000.0$/;"	v
+time_passed_seconds	swimfisher.py~	/^    time_passed_seconds = time_passed \/ 1000.0$/;"	v
+to_list	vector.py	/^    def to_list(self):$/;"	m	class:Vector2D
+to_list	vector.py	/^    def to_list(self):$/;"	m	class:Vector3D
+to_list	vector.py	/^    def to_list(self):$/;"	m	class:VectorND
+to_tuple	pysic.py	/^from vector import Vector3D, Vector2D, VectorND, to_tuple$/;"	i
+to_tuple	pysic.py~	/^from vector import Vector3D, Vector2D, VectorND, to_tuple$/;"	i
+to_tuple	univgame.py	/^from vector import Vector3D, Vector2D, to_tuple$/;"	i
+to_tuple	univgame.py~	/^from vector import Vector3D, Vector2D, to_tuple$/;"	i
+to_tuple	vector.py	/^    def to_tuple(self):$/;"	m	class:VectorUN
+to_tuple	vector.py	/^def to_tuple(v):$/;"	f
+to_view	pysic.py	/^    def to_view(x, y):$/;"	m	class:Object
+to_view	pysic.py~	/^    def to_view(x, y):$/;"	m	class:Object
+tri	blend_color.py	/^    tri = [ (0, 120), (639, 100), (639, 140) ]$/;"	v
+tri	blend_color.py~	/^    tri = [ (0, 120), (639, 100), (639, 140) ]$/;"	v
+tuple	movement.py	/^    def tuple(self):$/;"	m	class:Coor
+tuple	movement.py~	/^    def tuple(self):$/;"	m	class:Coor
+unangle	vector.py	/^    def unangle(a, r=1):$/;"	m	class:Vector2D
+unittest	2DVectorClass.py	/^    import unittest$/;"	i
+unittest	3DVectorClass.py	/^	import unittest$/;"	i
+unittest	VectorClass.py	/^    import unittest$/;"	i
+vector	pysic2.py	/^class vector:$/;"	c
+waiting	randart.py	/^                waiting = not waiting$/;"	v
+waiting	randart.py	/^waiting = False$/;"	v
+waiting	randart.py~	/^                waiting = not waiting$/;"	v
+waiting	randart.py~	/^waiting = False$/;"	v
+world	antvspi.py	/^    world = World()$/;"	v
+world	antvspi.py~	/^    world = World()$/;"	v
+world	oldgame.py	/^world = World()$/;"	v
+world	pysic.py	/^    world = World()$/;"	v	class:Object
+world	pysic.py~	/^    world = World()$/;"	v	class:Object
+world	univgame.py	/^world = World()$/;"	v
+world	univgame.py~	/^world = World()$/;"	v
+x	all_color.py	/^    x = (r&15)*256$/;"	v
+x	all_color.py~	/^    x = (r&15)*256$/;"	v
+xy2xyz	univgame.py	/^    def xy2xyz(x, y):$/;"	f
+xy2xyz	univgame.py~	/^    def xy2xyz(x, y):$/;"	f
+xyz2xy	univgame.py	/^    def xyz2xy(x, y):$/;"	f
+xyz2xy	univgame.py	/^    def xyz2xy(x, y, z):$/;"	f
+xyz2xy	univgame.py~	/^    def xyz2xy(x, y):$/;"	f
+xyz2xy	univgame.py~	/^    def xyz2xy(x, y, z):$/;"	f
+y	all_color.py	/^    y = (r>>4)*256$/;"	v
+y	all_color.py~	/^    y = (r>>4)*256$/;"	v
+zero_if_zero	vector.py	/^def zero_if_zero(n):$/;"	f
