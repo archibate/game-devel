@@ -1,0 +1,8 @@
+!!funny :
+	echo $(mF)is!!
+	echo $@
+	touch $@
+	echo $(SRC:%.c=%.o)
+
+SRC=vec.cpp
+.PHONY : vec.cpp

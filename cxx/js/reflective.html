@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<META CHARSET="UTF-8">
+		<TITLE>My First Polygon</TITLE>
+		<META NAME=Author CONTENT="Peng Yubin">
+	</HEAD>
+
+	<BODY>
+		<div style="width:400px; margin:auto; position:relative; font-size: 9pt; color: #777777;">
+			<canvas id=cv style="border: 1px solid;" width=400 height=400></canvas>
+		</div>
+
+		<script type=text/javascript src="../../rbgame/ob/Vector2.js"></script>
+		<script type=text/javascript>
+Particle = function(position, velocity) {
+	this.position = position;
+	this.velocity = velocity;
+	this.acceleration = Vector2.zero;
+	this.nextDistance = 0;
+};
+
+Particle.prototypes = {
+	kinematic : function(dt) {
+		this.position = this.position.add(this.velocity);
+		this.velocity = this.velocity.add(this.acceleration);
+	},
+};
+
+function ChamberBox(x0, y0, x1, y1) {
+	this.apply = function(particle) {
+		var x = particle.position.x;
+		if (x < x0 || x > x1) {
+			particle.velocity.x = -particle.velocity.x;
+			particle.position.x = Math.max(x0, Math.min(x1, x));
+		}
+
+		var y = particle.position.y;
+		if (y < y0 || y > y1) {
+			particle.velocity.y = -particle.velocity.y;
+			particle.position.y = Math.max(y0, Math.min(y1, y));
+		}
+	};
+}
+
+function ParticleSystem(_efforts) {
+	var that = this;
+	var particles = new Array();
+	var efforts = _efforts;
+
+	this.simulate = function(dt) {
+		applyEfforts();
+		applySickness();
+		kinematic(dt);
+	};
+
+	this.emit = function(particle) {
+		if (particles.length >= 1) {
+			var d0 = particles[particles.length - 1].position.subtract(particle.position).length();
+			particles[particles.length - 1].nextDistance = d0;
+		}
+		particles.push(particle);
+	}
+
+	function applyEfforts() {
+		for (var e in efforts)
+			for (var i in particles)
+				efforts[e].apply(particles[i]);
+	}
+
+	function applySickness() {
+		if (particles.length <= 1)
+			return;
+
+		for (var i = 0; i < particles.length - 1; i++) {
+			var pi = particles[i];
+			var pj = particles[i + 1];
+
+			var d0 = pi.nextDistance;
+			if (!d0)
+				continue;
+
+			var dis = pj.position.subtract(pi.position);
+			var d = dis.length();
+
+			const ks = 0.5;
+			var f = dis.normalize().multiply(ks * (d - d0));
+			pi.acceleration = pi.acceleration.add(f);
+			pj.acceleration = pj.acceleration.subtract(f);
+		}
+	}
+
+	function kinematic(dt) {
+		for (var i in particles) {
+			var p = particles[i];
+			p.position = p.position.add(p.velocity.multiply(dt));
+			p.velocity = p.velocity.add(p.acceleration.multiply(dt));
+			p.acceleration = Vector2.zero;//p.velocity.multiply(-0.0);
+		}
+	}
+
+	this.render = function(ctx, dt) {
+		ctx.beginPath();
+		ctx.strokeStyle = "rgb(255, 0, 0)";
+		for (var i in particles) {
+			var p = particles[i];
+			ctx.lineTo(p.position.x, p.position.y);
+		}
+		ctx.closePath();
+		ctx.stroke();
+
+		ctx.fillStyle = "rgb(255, 0, 0)";
+		for (var i in particles) {
+			var p = particles[i];
+			ctx.beginPath();
+			ctx.arc(p.position.x, p.position.y, 5, 0, Math.PI * 2, true);
+			ctx.closePath();
+			ctx.fill();
+		}
+	}
+}
+
+var efforts = new Array();
+efforts.push(new ChamberBox(0, 0, 400, 400));
+var ps = new ParticleSystem(efforts);
+ps.emit(new Particle(new Vector2(200, 200), sampleDirection().multiply(80)));
+/*ps.emit(new Particle(new Vector2(200, 200), sampleDirection().multiply(80)));
+ps.emit(new Particle(new Vector2(200, 200), sampleDirection().multiply(80)));
+ps.emit(new Particle(new Vector2(200, 200), sampleDirection().multiply(80)));
+ps.emit(new Particle(new Vector2(200, 200), sampleDirection().multiply(80)));
+ps.emit(new Particle(new Vector2(200, 200), sampleDirection().multiply(80)));*/
+
+var canvas = document.getElementById('cv');
+var ctx = canvas.getContext('2d');
+
+var dt = 0.1;
+
+function sampleDirection(from, to)
+{
+	var theta = Math.random() * Math.PI * 2;
+	return new Vector2(Math.cos(theta), Math.sin(theta));
+}
+
+var oldMousePosition = Vector2.zero, newMousePosition = Vector2.zero;
+var mouseDown = false;
+
+canvas.onmousedown = function(e) {
+	mouseDown = true;
+	canvas.onmousemove(e);
+	oldMousePosition = newMousePosition; 
+};
+
+canvas.onmouseup = function(e) {
+	mouseDown = false;
+	canvas.onmousemove(e);
+	oldMousePosition = newMousePosition; 
+};
+
+canvas.onmousemove = function(e) {
+	if (e.layerX || e.layerX == 0) {
+		e.target.style.position = 'relative';
+		newMousePosition = new Vector2(e.layerX, e.layerY);
+	} else
+		newMousePosition = new Vector2(e.offsetX, e.offsetY);
+};
+
+function step() {
+	if (mouseDown) {
+		var velocity = newMousePosition.subtract(oldMousePosition).multiply(2);
+		ps.emit(new Particle(newMousePosition, velocity));
+		oldMousePosition = newMousePosition;
+	}
+
+	ps.simulate(dt);
+
+	ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
+	ctx.fillRect(0, 0, 400, 400);
+	ps.render(ctx);
+}
+
+setInterval(step, dt * 1000 * 4);
+		</script>
+	</BODY>
+</HTML>

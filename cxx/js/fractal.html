@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<META CHARSET="UTF-8">
+		<TITLE>My First Polygon</TITLE>
+		<META NAME=Author CONTENT="Peng Yubin">
+	</HEAD>
+
+	<BODY>
+		<div style="width:400px; margin:auto; position:relative; font-size: 9pt; color: #777777;">
+			<canvas id=cv style="border: 1px solid;" width=400 height=400></canvas>
+		</div>
+
+		<script type=text/javascript src="../../rbgame/ob/Vector2.js"></script>
+		<script type=text/javascript>
+			var canvas = document.getElementById('cv');
+			var ctx = canvas.getContext('2d');
+
+			function draw(p0, p1, max) {
+				if (max <= 0) {
+					ctx.lineTo(p1.x, p1.y);
+					return;
+				}
+
+				var d = p1.subtract(p0).divide(2);
+				var n = new Vector2(d.y, -d.x);
+				var p2 = p0.add(n).add(d);
+
+				draw(p0, p2, max - 1);
+				draw(p2, p1, max - 1);
+			}
+
+			ctx.beginPath();
+			ctx.moveTo(150, 150);
+			draw(new Vector2(150, 150), new Vector2(250, 250), 15);
+			ctx.stroke();
+		</script>
+	</BODY>
+</HTML>

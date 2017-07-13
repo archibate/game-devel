@@ -1,0 +1,49 @@
+M=.mf
+S=pyctest.c
+pyb-designed : all
+USE_GTK	:=#gtk+-2.0
+OPTIMIZ	:=#3
+FASTER	+=pic
+PYTHOM	:=python2.7#3.6m
+LDLIBS	+=$(PYTHOM)
+LIBPATH	+=/usr/bin
+INCPATH	+=/usr/include/$(PYTHOM)
+LDFLAGS	+=-shared
+TARGET	:=$(PWD)/pyctest.so
+NORUN	:=true
+DEFINES	+=$(if $(USE_GTK), USE_GTK=$(USE_GTK))
+CPPFLAGS+=$(DEFINES:%=-D%) $(INCPATH:%=-I%)
+CXXFLAGS+=$(if $(USE_GTK), $(shell pkg-config --cflags --libs $(USE_GTK)))
+CXXFLAGS+=$(USE_OPT:%=-O%) $(FASTER:%=-f%)
+LDFLAGS	+=$(LIBPATH:%=-L%) $(LDLIBS:%=-l%)
+
+SOURCES	+=$S
+OBJECTS	+=$(SOURCES:%.c=%.o)
+ifndef TARGET
+TARGET	:=$(PWD)/$M.run
+endif
+
+.PHONY : all clean dep undep
+
+all : $(TARGET)
+
+ifndef NORUN
+run : $(TARGET)
+	$<
+endif
+
+$(TARGET) : $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^
+
+clean :
+	rm -rf $(OBJECTS) $(TARGET)
+
+dep : undep
+	(for x in $(SOURCES); \
+		do $(CXX) $(CXXFLAGS) $(CPPFLAGS) -E -M $$x; \
+		done) >> $M
+
+undep :
+	sed -i '/depedancies/q' $M
+
+.PHONY : **NOTE pyb-designed** */

@@ -1,0 +1,60 @@
+#!/usr/bin/env make -f
+M=.mf
+S=test.cpp
+pyb-designed : all
+
+options-begin-from-here : #####
+OPTIMIZ	:=3
+FASTER	+=
+LDLIBS	+=m
+LIBPATH	+=
+INCPATH	+=
+##DEBUG-begin
+OPTIMIZ	:=0
+DBGOPTS	:=gdb stabs+
+RUNTOOL	:=#cgdb
+##DEBUG-end
+
+USE_GTK	:=#gtk+-2.0
+CXXFLAGS+=$(if $(USE_GTK), $(shell pkg-config --cflags --libs $(USE_GTK)))
+end-to-here : ##################
+
+DEFINES	+=$(if $(USE_GTK), USE_GTK=$(USE_GTK))
+CPPFLAGS+=$(DEFINES:%=-D%) $(INCPATH:%=-I%)
+CXXFLAGS+=$(OPTIMIZ:%=-O%) $(FASTER:%=-f%) $(DBGOPTS:%=-g%)
+LDFLAGS	+=$(LIBPATH:%=-L%) $(LDLIBS:%=-l%)
+
+SOURCES	+=$S
+OBJECTS	+=$(SOURCES:%.cpp=%.o)
+ifndef TARGET
+TARGET	:=$(PWD)/$M.run
+endif
+
+.PHONY : **here** all clean dep undep rstmf
+
+all : $(TARGET)
+
+ifndef NORUN
+.PHONY : run
+run : $(TARGET)
+	$(RUNTOOL) $<
+endif
+
+$(TARGET) : $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^
+
+clean :
+	rm -rf $(OBJECTS) $(TARGET)
+
+rstmf :
+	false=false $(PWD)/$S
+
+dep : undep
+	(for x in $(SOURCES); \
+		do $(CXX) $(CXXFLAGS) $(CPPFLAGS) -E -M $$x; \
+		done) >> $M
+
+undep :
+	sed -i '/depedancies/q' $M
+
+.PHONY : **NOTE pyb-designed** */

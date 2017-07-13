@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DrawTickAt	gtkclk.c	/^void DrawTickAt (GdkDrawable *pixmap, GdkGC *gc, int nHour, int cx, int cy)$/;"	f
+Geometry	Light.cc	/^struct Geometry {$/;"	s	file:
+IMAGE_FILE	pixbuf.c	3;"	d	file:
+IMAGE_FILE	pixtrace.c	3;"	d	file:
+Intersect	Light.cc	/^	Intersect(Geometry *geometry) : geometry(geometry) {}$/;"	f	struct:Intersect
+Intersect	Light.cc	/^struct Intersect {$/;"	s	file:
+Plane	Light.cc	/^	Plane(Vector3 normal, real distant) : normal(normal), distant(distant) {}$/;"	f	struct:Plane
+Plane	Light.cc	/^struct Plane : Geometry {$/;"	s	file:
+QIMAGE_FILE	pixbuf.c	4;"	d	file:
+QIMAGE_FILE	pixtrace.c	4;"	d	file:
+Ray3	Light.cc	/^	Ray3(Vector3 origin, Vector3 direction) : origin(origin), direction(direction.normalized()) {}$/;"	f	struct:Ray3
+Ray3	Light.cc	/^struct Ray3 {$/;"	s	file:
+Repaint	gtkclk.c	/^gint Repaint(gpointer data)$/;"	f
+Vector2	Light.cc	/^	Vector2(real x = 0, real y = 0) : x(x), y(y) {}$/;"	f	struct:Vector2
+Vector2	Light.cc	/^struct Vector2 {$/;"	s	file:
+Vector3	Light.cc	/^	Vector3(const Vector3 &other) : x(other.x), y(other.y), z(other.z) {}$/;"	f	struct:Vector3
+Vector3	Light.cc	/^	Vector3(real x = 0, real y = 0, real z = 0) : x(x), y(y), z(z) {}$/;"	f	struct:Vector3
+Vector3	Light.cc	/^struct Vector3 {$/;"	s	file:
+_22R	Light.cc	11;"	d	file:
+_22W	Light.cc	10;"	d	file:
+_2MR	Light.cc	14;"	d	file:
+_2SR	Light.cc	13;"	d	file:
+_2SW	Light.cc	12;"	d	file:
+_32R	Light.cc	30;"	d	file:
+_32W	Light.cc	29;"	d	file:
+_3MR	Light.cc	33;"	d	file:
+_3SR	Light.cc	32;"	d	file:
+_3SW	Light.cc	31;"	d	file:
+average	pixbuf.c	/^int average(int p, int q, float factor)$/;"	f
+average	pixtrace.c	/^int average(int p, int q, float factor)$/;"	f
+button_clicked	main.c	/^void button_clicked(GtkWidget *widget, gpointer data)$/;"	f
+button_clicked	main.cc	/^void button_clicked(GtkWidget *widget, gpointer data)$/;"	f
+configure_event	gtk-clock.c	/^gint configure_event(GtkWidget *widget, GdkEventConfigure *event)$/;"	f
+configure_event	gtkclk.c	/^static gint configure_event (GtkWidget *widget, GdkEventConfigure *event)$/;"	f	file:
+cross	Light.cc	/^	Vector3 cross(Vector3 other) const$/;"	f	struct:Vector3
+delete_handler	main.c	/^gint delete_handler(GtkWidget *widget, gpointer data)$/;"	f
+delete_handler	main.cc	/^gint delete_handler(GtkWidget *widget, gpointer data)$/;"	f
+direction	Light.cc	/^	Vector3 direction;$/;"	m	struct:Ray3	file:
+distant	Light.cc	/^	real distant;$/;"	m	struct:Plane	file:
+dot	Light.cc	/^	real dot(Vector2 other) const { return this->x * other.x + this->y * other.y; }$/;"	f	struct:Vector2
+dot	Light.cc	/^	real dot(Vector3 other) const$/;"	f	struct:Vector3
+expose_event	gtk-clock.c	/^gint expose_event(GtkWidget *widget, GdkEventExpose *event)$/;"	f
+expose_event	gtkclk.c	/^gint expose_event (GtkWidget *widget, GdkEventExpose *event)$/;"	f
+geometry	Light.cc	/^	Geometry *geometry;$/;"	m	struct:Intersect	file:
+getPoint	Light.cc	/^	Vector3 getPoint(real t)$/;"	f	struct:Ray3
+intersect	Light.cc	/^	Intersect intersect(Ray3 ray)$/;"	f	struct:Plane
+length	Light.cc	/^	real length() const { return sqrt(this->x*this->x + this->y*this->y + this->z*this->z); }$/;"	f	struct:Vector3
+length	Light.cc	/^	real length() const { return sqrt(this->x*this->x + this->y*this->y); }$/;"	f	struct:Vector2
+main	gtk-clock.c	/^int main(int argc, char *argv[])$/;"	f
+main	gtkclk.c	/^int main (int argc, char *argv[])$/;"	f
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+main	main.cc	/^int main(int argc, char *argv[])$/;"	f
+main	pixbuf.c	/^int main(int argc, char *argv[])$/;"	f
+main	pixtrace.c	/^int main(int argc, char *argv[])$/;"	f
+normal	Light.cc	/^	Vector3 normal;$/;"	m	struct:Intersect	file:
+normal	Light.cc	/^	Vector3 normal;$/;"	m	struct:Plane	file:
+normalize	Light.cc	/^	Vector2 &normalize() { return *this \/= this->length(); }$/;"	f	struct:Vector2
+normalize	Light.cc	/^	Vector3 &normalize() { return *this \/= this->length(); }$/;"	f	struct:Vector3
+normalized	Light.cc	/^	Vector2 normalized() const { return Vector2(*this) \/ this->length(); }$/;"	f	struct:Vector2
+normalized	Light.cc	/^	Vector3 normalized() const { return Vector3(*this) \/ this->length(); }$/;"	f	struct:Vector3
+origin	Light.cc	/^	Vector3 origin;$/;"	m	struct:Ray3	file:
+pixmap	gtk-clock.c	/^GdkPixmap *pixmap = NULL;$/;"	v
+pixmap	gtkclk.c	/^static GdkPixmap *pixmap = NULL;$/;"	v	file:
+position	Light.cc	/^	Vector3 position;$/;"	m	struct:Intersect	file:
+quit	gtk-clock.c	/^void quit(void)$/;"	f
+quit	gtkclk.c	/^void quit ()$/;"	f
+quit	pixbuf.c	/^void quit(void)$/;"	f
+quit	pixtrace.c	/^void quit(void)$/;"	f
+radius	gtk-clock.c	/^int radius;$/;"	v
+radius	gtkclk.c	/^int radius;$/;"	v
+real	Light.cc	/^typedef double real;$/;"	t	file:
+repaint	gtk-clock.c	/^gint repaint(gpointer data)$/;"	f
+x	Light.cc	/^	real x, y, z;$/;"	m	struct:Vector3	file:
+x	Light.cc	/^	real x, y;$/;"	m	struct:Vector2	file:
+y	Light.cc	/^	real x, y, z;$/;"	m	struct:Vector3	file:
+y	Light.cc	/^	real x, y;$/;"	m	struct:Vector2	file:
+z	Light.cc	/^	real x, y, z;$/;"	m	struct:Vector3	file:
