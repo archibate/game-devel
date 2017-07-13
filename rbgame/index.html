@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+
+		<div style="text-align: center">
+			<button onclick="playPause()" id="playPause">play</button>
+			<br/>
+
+			<video width="320" height="240" id="video1">
+				<source src="http://www.w3school.com.cn/example/html5/mov_bbb.ogg" type="video/ogg"/>
+				<source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4"/>
+				Your browser does not support the video tag.
+			</video>
+
+			<audio controls="controls" id="audio1">
+				<source src="http://www.w3school.com.cn/i/song.ogg" type="audio/ogg">
+				<source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+
+		<script type="text/javascript">//<!--
+var myVideo = document.getElementById("video1");
+
+function playPause()
+{
+	if (myVideo.paused) {
+		myVideo.play();
+		document.getElementById("playPause").content = "pause";
+	} else {
+		myVideo.pause();
+		document.getElementById("playPause").content = "play";
+	}
+}
+		</script>
+
+	</body>
+</html>

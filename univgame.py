@@ -57,22 +57,22 @@ SHOW_MODE = sys.argv[1] if len(sys.argv) > 1 else 'small'
 
 if SHOW_MODE == 'small':
     SCREEN_SIZE = (640, 480)
-    BACKGROUND = 'sushiplate.bmp'
+    BACKGROUND = 'sushiplate.jpg'
     SCREEN_ATTR = NOFRAME
 elif SHOW_MODE == 'big':
     SCREEN_SIZE = (1024, 768)
-    BACKGROUND = 'paltanen.bmp'
+    BACKGROUND = 'paltanen.jpg'
     SCREEN_ATTR = NOFRAME
 elif SHOW_MODE == 'full-small':
     SCREEN_SIZE = (640, 480)
-    BACKGROUND = 'sushiplate.bmp'
+    BACKGROUND = 'sushiplate.jpg'
     SCREEN_ATTR = FULLSCREEN
 elif SHOW_MODE == 'full-big':
     SCREEN_SIZE = (1024, 768)
-    BACKGROUND = 'paltanen.bmp'
+    BACKGROUND = 'paltanen.jpg'
     SCREEN_ATTR = FULLSCREEN
 elif SHOW_MODE == 'full-large' or SHOW_MODE == 'full':
-    BACKGROUND = 'violet.bmp'
+    BACKGROUND = 'violet.jpg'
     SCREEN_SIZE = (1920, 1080)
     SCREEN_ATTR = FULLSCREEN
 elif SHOW_MODE == 'dark':
@@ -113,7 +113,7 @@ else:
     background = None
     background_width, background_height = screen.get_width(), screen.get_height()
 
-mouse_image = pygame.image.load('fugu.bmp').convert_alpha()
+mouse_image = pygame.image.load('fugu.png').convert_alpha()
 
 
 screen_width, screen_height = screen.get_width(), screen.get_height()

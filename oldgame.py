@@ -34,28 +34,32 @@ def show_world(screen):
     world.show(screen)
 
 
+#pygame.mixer.pre_init(44100, 16, 2, 4096)
 pygame.init()
+
+#ping_sound = pygame.mixer.Sound("resource/bounce.wav")
+#pong_sound = pygame.mixer.Sound("resource/bounce.wav")
 
 SHOW_MODE = sys.argv[1] if len(sys.argv) > 1 else 'small'
 
 if SHOW_MODE == 'small':
     SCREEN_SIZE = (640, 480)
-    BACKGROUND = 'sushiplate.bmp'
+    BACKGROUND = 'sushiplate.jpg'
     SCREEN_ATTR = NOFRAME
 elif SHOW_MODE == 'big':
     SCREEN_SIZE = (1024, 768)
-    BACKGROUND = 'paltanen.bmp'
+    BACKGROUND = 'paltanen.jpg'
     SCREEN_ATTR = NOFRAME
 elif SHOW_MODE == 'full-small':
     SCREEN_SIZE = (640, 480)
-    BACKGROUND = 'sushiplate.bmp'
+    BACKGROUND = 'sushiplate.jpg'
     SCREEN_ATTR = FULLSCREEN
 elif SHOW_MODE == 'full-big':
     SCREEN_SIZE = (1024, 768)
-    BACKGROUND = 'paltanen.bmp'
+    BACKGROUND = 'paltanen.jpg'
     SCREEN_ATTR = FULLSCREEN
 elif SHOW_MODE == 'full-large' or 'full':
-    BACKGROUND = 'violet.bmp'
+    BACKGROUND = 'violet.jpg'
     SCREEN_SIZE = (1920, 1080)
     SCREEN_ATTR = FULLSCREEN
 else:
@@ -79,7 +83,7 @@ else:
     background = None
     background_width, background_height = screen.get_width(), screen.get_height()
 
-mouse_image = pygame.image.load('fugu.bmp').convert_alpha()
+mouse_image = pygame.image.load('fugu.png').convert_alpha()
 
 
 def quit_game():
@@ -103,11 +107,11 @@ FORCE_ONCE = 0.025 * SCALE
 SPEED_SCALE = 1.5   # or 0.05 / TIMER_INTERVAL
 #SLOW_PERC = 1
 #GRAVITY_FORCE = 0
-#PXNG_SLOW_PERC = 1
+#BOUNCINESS_PERC = 1
 #RAND_SCALE = 0
 SLOW_PERC = 0.994
 GRAVITY_FORCE = 0.4 * FORCE_ONCE    # or 0.01 or 0.001
-PXNG_SLOW_PERC = 0.67
+BOUNCINESS_PERC = 0.67
 RAND_SCALE = 0.01
 
 slow_i = SLOW_INTERVAL
@@ -206,12 +210,21 @@ while True:
         speed_y *= SLOW_PERC
         slow_i = SLOW_INTERVAL
 
+    #def play_bounce_sound(name):
+        #sound = pong_sound if name == 'pong' else ping_sound
+        #channel = sound.play(0, 1)
+        #if channel is None:
+            #raise FileNotFoundError('failed to create channel')
+        #right = x / screen_width
+        #left = 1 - right
+        #channel.set_volume(left, right)
+
     if x <= 0 or x >= screen_width - mouse_width:
-        print('ping')
-        speed_x = -speed_x * ((1 + RAND_SCALE * randval()) if RAND_SCALE != 0 else 1) * PXNG_SLOW_PERC
+        #play_bounce_sound('ping')
+        speed_x = -speed_x * ((1 + RAND_SCALE * randval()) if RAND_SCALE != 0 else 1) * BOUNCINESS_PERC
     if y <= 0 or y >= screen_height - mouse_height:
-        print('pong')
-        speed_y = -speed_y * ((1 + RAND_SCALE * randval()) if RAND_SCALE != 0 else 1) * PXNG_SLOW_PERC
+        #play_bounce_sound('pong')
+        speed_y = -speed_y * ((1 + RAND_SCALE * randval()) if RAND_SCALE != 0 else 1) * BOUNCINESS_PERC
 
     if x <= 0: x = 0
     elif x >= screen_width - mouse_width:

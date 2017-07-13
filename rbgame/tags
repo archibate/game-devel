@@ -1,0 +1,155 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+*	lib/veclass.rb	/^	def * scale$/;"	f	class:Vec2d
++	lib/veclass.rb	/^	def + other$/;"	f	class:Vec2d
+-	lib/veclass.rb	/^	def - other$/;"	f	class:Vec2d
+-@	lib/veclass.rb	/^	def -@$/;"	f	class:Vec2d
+/	lib/veclass.rb	/^	def \/ scale$/;"	f	class:Vec2d
+Animal	test/intro.rb	/^	class Animal < FourLegWorld::Animal$/;"	c	class:TwoLegWorld
+Animal	test/intro.rb	/^	class Animal$/;"	c	class:FourLegWorld
+AnimalCommon	test/intro.rb	/^module AnimalCommon$/;"	m
+Ball	game.rb	/^class Ball < BallElement$/;"	c	class:BallElement.old_check_balls
+BallElement	game.rb	/^class BallElement < Element$/;"	c
+DrawPosElementM	game.rb	/^module DrawPosElementM$/;"	m	class:BallElement.old_check_balls
+Element	game.rb	/^class Element < ElementI$/;"	c
+ElementI	game.rb	/^class ElementI$/;"	c
+Enemy	game.rb	/^class Enemy < Rocket$/;"	c	class:BallElement.old_check_balls
+FourLegWorld	test/intro.rb	/^module FourLegWorld$/;"	m
+GameWindow	.game.rb	/^class GameWindow < Gosu::Window$/;"	c
+GameWindow	game.rb	/^class GameWindow < Gosu::Window$/;"	c	class:BallElement
+Mathematic	lib/math.rb	/^module Mathematic$/;"	m
+MonaLisa	monalisa.rb	/^class MonaLisa < Chingu::Window$/;"	c
+Paint	monalisa.rb	/^class Paint < Chingu::GameState$/;"	c
+Pix	monalisa.rb	/^class Pix < Chingu::GameObject$/;"	c
+Rocket	.game.rb	/^class Rocket$/;"	c
+Rocket	game.rb	/^class Rocket < BallElement$/;"	c	class:BallElement.old_check_balls
+TwoLegWorld	test/intro.rb	/^module TwoLegWorld$/;"	m
+Vec2d	lib/veclass.rb	/^class Vec2d$/;"	c
+_draw	game.rb	/^	def _draw zidx, angle = 0$/;"	f	class:BallElement.old_check_balls.DrawPosElementM
+_o2	lib/veclass.rb	/^	def _o2 ofun, other$/;"	f	class:Vec2d
+_o2!	lib/veclass.rb	/^	def _o2! ofun, other$/;"	f	class:Vec2d
+_om	lib/veclass.rb	/^	def _om ofun$/;"	f	class:Vec2d
+_om!	lib/veclass.rb	/^	def _om! ofun$/;"	f	class:Vec2d
+_os	lib/veclass.rb	/^	def _os ofun, scale$/;"	f	class:Vec2d
+_os!	lib/veclass.rb	/^	def _os! ofun, scale$/;"	f	class:Vec2d
+abs	lib/math.rb	/^	def self.abs a$/;"	F	class:Mathematic
+accelerate_move	.game.rb	/^	def accelerate_move dt$/;"	f	class:Rocket
+acceleration	game.rb	/^	def acceleration force$/;"	f	class:BallElement
+add!	lib/veclass.rb	/^	def add! other$/;"	f	class:Vec2d
+add_rand_ball_to	game.rb	/^def add_rand_ball_to balls$/;"	f
+angle	lib/veclass.rb	/^	def angle$/;"	f	class:Vec2d
+angle=	lib/veclass.rb	/^	def angle= angle$/;"	f	class:Vec2d
+better_angle	game.rb	/^def better_angle a$/;"	f
+bounce_with	game.rb	/^	def bounce_with ball$/;"	f	class:BallElement.old_check_balls.Rocket
+bounce_with	game.rb	/^	def bounce_with ball$/;"	f	class:BallElement.old_check_balls.check_balls
+button_down	.game.rb	/^	def button_down(id)$/;"	f	class:GameWindow
+button_down	game.rb	/^	def button_down(id)$/;"	f	class:update
+button_up	.game.rb	/^	def button_up(id)$/;"	f	class:GameWindow
+button_up	game.rb	/^	def button_up(id)$/;"	f	class:update
+check_balls	game.rb	/^	def check_balls balls$/;"	f	class:BallElement.old_check_balls
+check_balls_again	game.rb	/^		def ball.check_balls_again balls, time_passed$/;"	F	class:BallElement.old_check_balls.Rocket
+check_balls_again	game.rb	/^	def check_balls_again balls, time_passed$/;"	f	class:BallElement.old_check_balls.Enemy
+check_balls_again	game.rb	/^	def check_balls_again balls, time_passed$/;"	f	class:BallElement.old_check_balls.Rocket
+check_balls_again	game.rb	/^	def check_balls_again balls, time_passed$/;"	f	class:BallElement.old_check_balls.check_balls
+combine_with	game.rb	/^	def combine_with ball$/;"	f	class:BallElement.old_check_balls.Rocket
+counter	test/.test.rb	/^def counter$/;"	f
+decombine_ball	game.rb	/^	def decombine_ball physopts$/;"	f	class:BallElement.old_check_balls.Rocket
+div!	lib/veclass.rb	/^	def div! scale$/;"	f	class:Vec2d
+do_fire_accelerate	game.rb	/^	def do_fire_accelerate time_passed$/;"	f	class:BallElement.old_check_balls.Rocket
+do_time_tick	.game.rb	/^	def do_time_tick$/;"	f	class:GameWindow
+do_time_tick	game.rb	/^	def do_time_tick$/;"	f
+dot	lib/veclass.rb	/^	def dot other$/;"	f	class:Vec2d
+dot_angle	lib/veclass.rb	/^	def dot_angle other_angle$/;"	f	class:Vec2d
+dot_angle_to	lib/veclass.rb	/^	def dot_angle_to angle$/;"	f	class:Vec2d
+dot_rot!	lib/veclass.rb	/^	def dot_rot! other$/;"	f	class:Vec2d
+dot_rot_angle!	lib/veclass.rb	/^	def dot_rot_angle! other_angle$/;"	f	class:Vec2d
+draw	.game.rb	/^	def draw$/;"	f	class:GameWindow
+draw	.game.rb	/^	def draw$/;"	f	class:Rocket
+draw	game.rb	/^	def draw zidx = 1$/;"	f	class:BallElement.old_check_balls.DrawPosElementM
+draw	game.rb	/^	def draw zidx = 2$/;"	f	class:BallElement.old_check_balls.Rocket
+draw	game.rb	/^	def draw$/;"	f	class:update
+drop	monalisa.rb	/^  def drop$/;"	f	class:Pix
+drop	monalisa.rb	/^  def drop$/;"	f
+fd_with	game.rb	/^	def fd_with ball$/;"	f	class:BallElement.old_check_balls.check_balls
+fg_with	game.rb	/^	def fg_with ball$/;"	f	class:BallElement.old_check_balls.check_balls
+fire_accelerate	game.rb	/^	def fire_accelerate$/;"	f	class:BallElement.old_check_balls
+fire_accelerate	game.rb	/^	def fire_accelerate$/;"	f	class:BallElement.old_check_balls.Rocket
+fs_with	game.rb	/^	def fs_with ball$/;"	f	class:BallElement.old_check_balls.check_balls
+hurt_energy	game.rb	/^	def hurt_energy energy$/;"	f	class:BallElement.old_check_balls.Rocket
+image	.game.rb	/^	def image$/;"	f	class:Rocket
+image	game.rb	/^	def image$/;"	f	class:BallElement.old_check_balls.Rocket
+initialize	.game.rb	/^	def initialize width = WindowWidth, height = WindowHeight, fullscreen = WindowFullscreen$/;"	f	class:GameWindow
+initialize	.game.rb	/^	def initialize window$/;"	f	class:Rocket
+initialize	game.rb	/^	def initialize physopts = {}$/;"	f	class:BallElement
+initialize	game.rb	/^	def initialize physopts = {}$/;"	f	class:BallElement.old_check_balls.Ball
+initialize	game.rb	/^	def initialize physopts = {}$/;"	f	class:Element
+initialize	game.rb	/^	def initialize pos = Vec2d.new(WindowWidth \/ 2.0, WindowHeight \/ 2.0),$/;"	f	class:BallElement.old_check_balls.Enemy
+initialize	game.rb	/^	def initialize pos = Vec2d.new(WindowWidth \/ 2.0, WindowHeight \/ 2.0),$/;"	f	class:BallElement.old_check_balls.Rocket
+initialize	game.rb	/^	def initialize pos, vel, mass$/;"	f	class:ElementI
+initialize	game.rb	/^	def initialize width = WindowWidth, height = WindowHeight, fullscreen = WindowFullscreen$/;"	f	class:BallElement.GameWindow
+initialize	lib/veclass.rb	/^	def initialize x_or_pair = [0, 0], y = nil$/;"	f	class:Vec2d
+initialize	monalisa.rb	/^  def initialize$/;"	f	class:MonaLisa
+initialize	monalisa.rb	/^  def initialize$/;"	f	class:Paint
+initialize	monalisa.rb	/^  def initialize(options)$/;"	f	class:Pix
+initialize	test/intro.rb	/^		def initialize _$/;"	f	class:FourLegWorld.Animal
+initialize	test/intro.rb	/^	def initialize name$/;"	f	class:AnimalCommon
+leg_count	test/intro.rb	/^		def leg_count$/;"	f	class:FourLegWorld.Animal
+leg_count	test/intro.rb	/^		def leg_count$/;"	f	class:TwoLegWorld.Animal
+length	lib/veclass.rb	/^	def length$/;"	f	class:Vec2d
+length=	lib/veclass.rb	/^	def length= length$/;"	f	class:Vec2d
+lunch_ball_to	game.rb	/^	def lunch_ball_to balls$/;"	f	class:BallElement.old_check_balls.Rocket
+max	lib/math.rb	/^	def self.max a, b$/;"	F	class:Mathematic
+min	lib/math.rb	/^	def self.min a, b$/;"	F	class:Mathematic
+move	.game.rb	/^	def move dt, force = Vec2d.new$/;"	f	class:Rocket
+move	game.rb	/^	def move dt, force = Vec2d.new$/;"	f	class:ElementI
+move	game.rb	/^	def move time_passed, force = Vec2d.new$/;"	f	class:BallElement
+movedv	.game.rb	/^	def movedv dt, dv = Vec2d.new$/;"	f	class:Rocket
+movedv	game.rb	/^	def movedv dt, dv = Vec2d.new$/;"	f
+moveforce	.game.rb	/^	def moveforce dt, force = Vec2d.new$/;"	f	class:Rocket
+moveforce	game.rb	/^	def moveforce dt, force = Vec2d.new$/;"	f	class:ElementI
+mul!	lib/veclass.rb	/^	def mul! scale$/;"	f	class:Vec2d
+normalize	lib/veclass.rb	/^	def normalize$/;"	f	class:Vec2d
+normalize!	lib/veclass.rb	/^	def normalize!$/;"	f	class:Vec2d
+old_bounce_with	game.rb	/^	def old_bounce_with ball, raw_angle$/;"	f	class:BallElement.old_check_balls
+old_check_balls	game.rb	/^	def old_check_balls balls$/;"	f	class:BallElement
+radar_eat_with	game.rb	/^	def radar_eat_with ball, balls$/;"	f	class:BallElement.old_check_balls.Rocket
+randpos	game.rb	/^	def randpos$/;"	f	class:add_rand_ball_to
+randvel	game.rb	/^	def randvel$/;"	f	class:add_rand_ball_to
+refresh_health_image	game.rb	/^	def refresh_health_image$/;"	f	class:BallElement.old_check_balls.Rocket
+rotate	lib/veclass.rb	/^	def rotate angle$/;"	f	class:Vec2d
+rotate!	lib/veclass.rb	/^	def rotate! angle$/;"	f	class:Vec2d
+rotate_to	lib/veclass.rb	/^	def rotate_to angle$/;"	f	class:Vec2d
+rotate_to!	lib/veclass.rb	/^	def rotate_to! angle$/;"	f	class:Vec2d
+say_hello	test/intro.rb	/^	def say_hello$/;"	f	class:AnimalCommon
+say_hello	test/intro.rb	/^def cat.say_hello$/;"	F
+setup	monalisa.rb	/^  def setup$/;"	f	class:Paint
+setup	monalisa.rb	/^  def setup$/;"	f	class:Pix
+sleep	test/intro.rb	/^		def sleep$/;"	f	class:FourLegWorld.Animal
+smart_accel	game.rb	/^	def smart_accel balls$/;"	f	class:BallElement.old_check_balls.Enemy
+sqrt	lib/math.rb	/^	def self.sqrt(x, precious=0.000000001)$/;"	F	class:Mathematic
+sub!	lib/veclass.rb	/^	def sub! other$/;"	f	class:Vec2d
+to_s	game.rb	/^	def to_s$/;"	f	class:BallElement.old_check_balls.Ball
+to_s	game.rb	/^	def to_s$/;"	f	class:BallElement.old_check_balls.Rocket
+to_s	game.rb	/^	def to_s$/;"	f	class:ElementI
+to_s	lib/veclass.rb	/^	def to_s$/;"	f	class:Vec2d
+total2	test/.test.rb	/^def total2(from, to, &block)$/;"	f
+turn_angle	.game.rb	/^	def turn_angle angle$/;"	f	class:Rocket
+turn_angle	game.rb	/^	def turn_angle angle$/;"	f	class:BallElement.old_check_balls.Rocket
+turn_if_need	game.rb	/^			def self.turn_if_need time_passed$/;"	F
+turn_left	.game.rb	/^	def turn_left dt$/;"	f	class:Rocket
+turn_left	game.rb	/^	def turn_left dt$/;"	f	class:BallElement.old_check_balls.Rocket
+turn_right	.game.rb	/^	def turn_right dt$/;"	f	class:Rocket
+turn_right	game.rb	/^	def turn_right dt$/;"	f	class:BallElement.old_check_balls.Rocket
+update	.game.rb	/^	def update$/;"	f	class:GameWindow
+update	game.rb	/^	def update$/;"	f
+update	monalisa.rb	/^  def update$/;"	f
+vector2	lib/veclass.rb	/^def vector2 xopr = [0, 0], y = nil$/;"	f
+warp	.game.rb	/^	def warp pos$/;"	f	class:Rocket
+warp_if_need	.game.rb	/^	def warp_if_need$/;"	f	class:Rocket
+warp_if_need	game.rb	/^	def warp_if_need$/;"	f	class:BallElement.old_check_balls.Rocket
+warp_if_need	game.rb	/^	def warp_if_need$/;"	f	class:ElementI
+warped_pos	game.rb	/^	def warped_pos pos = @pos$/;"	f

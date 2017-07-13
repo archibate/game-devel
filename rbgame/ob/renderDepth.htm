@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+
+<html>
+	<meta charset="UTF-8">
+
+	<body>
+		<canvas width=400 height=400 id="canvas1"></canvas>
+		<script type="text/javascript" src="Color.js"></script>
+		<script type="text/javascript" src="Vector2.js"></script>
+		<script type="text/javascript" src="Vector3.js"></script>
+		<script type="text/javascript" src="Ray3.js"></script>
+		<script type="text/javascript" src="Plane.js"></script>
+		<script type="text/javascript" src="Sphere.js"></script>
+		<script type="text/javascript" src="Union.js"></script>
+		<script type="text/javascript" src="CheckerMaterial.js"></script>
+		<script type="text/javascript" src="PhongMaterial.js"></script>
+		<script type="text/javascript" src="GlassicMaterial.js"></script>
+		<script type="text/javascript" src="PlasticMaterial.js"></script>
+		<script type="text/javascript" src="Camera.js"></script>
+		<script type="text/javascript">//<!--
+function rayTraceRecursive(scene, ray, maxReflect) {
+	var result = scene.intersect(ray);
+
+	if (result.geometry) {
+		var geometry = result.geometry;
+		var reflectiveness = geometry.material.reflectiveness;
+		var color = geometry.material.sample(ray, result.position, result.normal);
+		color = color.multiply(1 - reflectiveness);
+
+		if (reflectiveness > 0 && maxReflect > 0) {
+			var r = result.normal.multiply(-2 * result.normal.dot(ray.direction)).add(ray.direction);
+			ray = new Ray3(result.position, r);
+			var reflectedColor = rayTraceRecursive(scene, ray, maxReflect - 1);
+			color = color.add(reflectedColor.multiply(reflectiveness));
+		}
+		return color;
+	} else
+		return new Color(0.5, 0.5, 0.5);
+}
+
+function rayTrace(canvas, camera, scene, maxReflect) {
+	var ctx = canvas.getContext("2d");
+	var w = canvas.attributes.width.value;
+	var h = canvas.attributes.height.value;
+
+	ctx.fillStyle = "rgb(128, 128, 128)";
+	ctx.fillRect(0, 0, w, h);
+
+	var imgdata = ctx.getImageData(0, 0, w, h);
+	var pixels = imgdata.data;
+
+	scene.initialize();
+	camera.initialize();
+	var ray = camera.generateRay(0.4, -0.4);
+
+	var i = 0;
+
+	for (var y = h/2; y > -h/2; y--) {
+		var sy = y * 2 / h;
+
+		for (var x = -w/2; x < w/2; x++) {
+			var sx = x * 2 / w;
+
+			var ray = camera.generateRay(sx, sy);
+			var color = rayTraceRecursive(scene, ray, maxReflect);
+			pixels[i+0] = color.r * 255;
+			pixels[i+1] = color.g * 255;
+			pixels[i+2] = color.b * 255;
+			pixels[i+3] = 255;
+			i += 4;
+		}
+	}
+	ctx.putImageData(imgdata, 0, 0);
+}
+
+function renderDepth(canvas, camera, scene, maxDepth) {
+	var ctx = canvas.getContext("2d");
+	var w = canvas.attributes.width.value;
+	var h = canvas.attributes.height.value;
+
+	ctx.fillRect(0, 0, w, h);
+
+	var imgdata = ctx.getImageData(0, 0, w, h);
+	var pixels = imgdata.data;
+
+	scene.initialize();
+	camera.initialize();
+
+	var i = 0;
+
+	for (var y = h/2; y > -h/2; y--) {
+		var sy = y * 2 / h;
+
+		for (var x = -w/2; x < w/2; x++) {
+			var sx = x * 2 / w;
+
+			/*var a = x + y;
+			var blacx = x % (w/8) >= w/16;
+			var blacy = y % (h/8) >= h/16;
+			if (blacx ^ blacy) {
+				pixels[i++] = 255;
+				pixels[i++] = 255;
+				pixels[i++] = 255;
+				pixels[i++] = 255;
+			} else {
+				pixels[i++] = 0;
+				pixels[i++] = 0;
+				pixels[i++] = 0;
+				pixels[i++] = 255;
+			}*/
+
+			var ray = camera.generateRay(sx, sy);
+			var result = scene.intersect(ray);
+
+			if (result.geometry) {
+				var depth = 1 - Math.min(result.distance / maxDepth, 1);
+				pixels[i+0] = depth * 255;
+				pixels[i+1] = depth * 255;
+				pixels[i+2] = depth * 255;
+				//pixels[i+0] = result.normal.x * 128 + 128;
+				//pixels[i+1] = result.normal.y * 128 + 128;
+				//pixels[i+2] = result.normal.z * 128 + 128;
+				pixels[i+3] = 255;
+			}
+			i += 4;
+		}
+	}
+	ctx.putImageData(imgdata, 0, 0);
+}
+
+var camera = new Camera(new Vector3(0, 8, 0), new Vector3(0, 0, -1), new Vector3(0, 1, 0), 60 * Math.PI / 180);
+var plane = new Plane(new Vector3(0, 1, 0), 0);
+var sphere1 = new Sphere(new Vector3(-10, 8, -20), 10);
+var sphere2 = new Sphere(new Vector3(10, 8, -20), 10);
+plane.material = new CheckerMaterial(0.1, 0.5);
+sphere1.material = new PhongMaterial(Color.red, Color.white, 16, 0.3);
+sphere2.material = new PhongMaterial(Color.blue, Color.white, 16, 0.25);
+var scene = new Union([plane, sphere1, sphere2]);
+
+var canvas = document.getElementById("canvas1");
+rayTrace(canvas, camera, scene, 3);
+// or try renderDepth(canvas, camera, scene, 30);
+		//--></script>
+	</body>
+</html>

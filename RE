@@ -1,0 +1,7 @@
+if [ "x$1" == "xena" ]
+then ln -sf resource/* ./
+elif [ "x$1" == "xdis" ]
+then rm -f $(ls -l | grep '^l' | awk '{print $9}')
+elif [ "x$1" == "xcls" ]
+then rm -f $(cat .gitignore)
+fi

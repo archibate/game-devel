@@ -240,7 +240,7 @@ if __name__ == '__main__':
     pygame.display.set_caption('Ant Gamw')
     clock = pygame.time.Clock()
 
-    ant_image = pygame.image.load('ant.bmp').convert_alpha()
+    ant_image = pygame.image.load('ant.png').convert_alpha()
 
     world = World()
 

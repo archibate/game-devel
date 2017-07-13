@@ -39,7 +39,7 @@ class Coor(tuple):
 
 
 pos = Coor((screen.get_width() / 2, screen.get_height() / 2))
-speed = Coor((0.4, 0.3))
+speed = Coor((0.4, 0.3))*6
 
 while True:
 

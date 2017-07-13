@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-background = 'sushiplate.bmp'
-sprite = 'fugu.bmp'
+background = 'sushiplate.jpg'
+sprite = 'fugu.png'
  
 import pygame
 from pygame.locals import *

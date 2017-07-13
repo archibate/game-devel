@@ -1,0 +1,256 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Application	game.py	/^from pygase import Application$/;"	i
+Application	pygase.py	/^class Application():$/;"	c
+Application	pygase.py~	/^class Application():$/;"	c
+BasicButton	pygase.py	/^class BasicButton(Element):$/;"	c
+BasicButton	pygase.py~	/^class BasicButton(Element):$/;"	c
+BasicRectElement	pygase.py	/^class BasicRectElement(RenderElement):$/;"	c
+BasicRectElement	pygase.py~	/^class BasicRectElement(RenderElement):$/;"	c
+ChoiceButton	pygase.py	/^class ChoiceButton(BasicButton):$/;"	c
+ChoiceButton	pygase.py~	/^class ChoiceButton(BasicButton):$/;"	c
+Element	actor.py	/^from pygase import Element$/;"	i
+Element	pygase.py	/^class Element(SimpleRectElement):$/;"	c
+Element	pygase.py~	/^class Element(SimpleRectElement):$/;"	c
+GObject	glak.py	/^class GObject(Element):$/;"	c
+Game	game.py	/^class Game(Application):$/;"	c
+Imageactor	actor.py	/^class Imageactor(Sprite, Element, glak.GObject):$/;"	c
+MOUSEMOTIONENTER	pygase.py	/^MOUSEMOTIONENTER = USEREVENT+1$/;"	v
+MOUSEMOTIONENTER	pygase.py~	/^MOUSEMOTIONENTER = USEREVENT+1$/;"	v
+MOUSEMOTIONLEAVE	pygase.py	/^MOUSEMOTIONLEAVE = USEREVENT+2$/;"	v
+MOUSEMOTIONLEAVE	pygase.py~	/^MOUSEMOTIONLEAVE = USEREVENT+2$/;"	v
+QuitException	excepist.py	/^class QuitException(BaseException):$/;"	c
+QuitException	pygase.py	/^from excepist import QuitException$/;"	i
+QuitException	pygase.py~	/^from excepist import QuitException$/;"	i
+RenderElement	pygase.py	/^RenderElement = RenderElementIntf$/;"	v
+RenderElement	pygase.py~	/^RenderElement = RenderElementIntf$/;"	v
+RenderElementIntf	pygase.py	/^class RenderElementIntf():$/;"	c
+RenderElementIntf	pygase.py~	/^class RenderElementIntf():$/;"	c
+SimpleRectElement	pygase.py	/^class SimpleRectElement(BasicRectElement):$/;"	c
+SimpleRectElement	pygase.py~	/^class SimpleRectElement(BasicRectElement):$/;"	c
+Sprite	actor.py	/^from pygame.sprite import Sprite$/;"	i
+Sunflower	actor.py	/^class Sunflower(Imageactor):$/;"	c
+Sunflower	game.py	/^from actor import Sunflower$/;"	i
+UnitTestVec2D	VectorClass2d.py	/^    class UnitTestVec2D(unittest.TestCase):$/;"	c
+Vec2d	VectorClass2d.py	/^class Vec2d(object):$/;"	c
+Vec2d	glak.py	/^from VectorClass import Vec2d$/;"	i
+Vec2d	pygase.py	/^from VectorClass2d import Vec2d$/;"	i
+Vec2d	pygase.py~	/^from VectorClass2d import Vec2d$/;"	i
+__abs__	VectorClass2d.py	/^    def __abs__(self):$/;"	m	class:Vec2d	file:
+__add__	VectorClass2d.py	/^    def __add__(self, other):$/;"	m	class:Vec2d	file:
+__and__	VectorClass2d.py	/^    def __and__(self, other):$/;"	m	class:Vec2d	file:
+__div__	VectorClass2d.py	/^    def __div__(self, other):$/;"	m	class:Vec2d	file:
+__divmod__	VectorClass2d.py	/^    def __divmod__(self, other):$/;"	m	class:Vec2d	file:
+__eq__	VectorClass2d.py	/^    def __eq__(self, other):$/;"	m	class:Vec2d	file:
+__floordiv__	VectorClass2d.py	/^    def __floordiv__(self, other):$/;"	m	class:Vec2d	file:
+__getitem__	VectorClass2d.py	/^    def __getitem__(self, key):$/;"	m	class:Vec2d	file:
+__getstate__	VectorClass2d.py	/^    def __getstate__(self):$/;"	m	class:Vec2d	file:
+__iadd__	VectorClass2d.py	/^    def __iadd__(self, other):$/;"	m	class:Vec2d	file:
+__idiv__	VectorClass2d.py	/^    def __idiv__(self, other):$/;"	m	class:Vec2d	file:
+__ifloordiv__	VectorClass2d.py	/^    def __ifloordiv__(self, other):$/;"	m	class:Vec2d	file:
+__imul__	VectorClass2d.py	/^    def __imul__(self, other):$/;"	m	class:Vec2d	file:
+__init__	VectorClass2d.py	/^    def __init__(self, x_or_pair, y = None):$/;"	m	class:Vec2d
+__init__	actor.py	/^    def __init__(self, pos):$/;"	m	class:Sunflower
+__init__	actor.py	/^    def __init__(self, rect, rate=100, number=18,$/;"	m	class:Imageactor
+__init__	excepist.py	/^    def __init__(self, *args):$/;"	m	class:QuitException
+__init__	game.py	/^    def __init__(self):$/;"	m	class:Game
+__init__	glak.py	/^    def __init__(self, rect):$/;"	m	class:GObject
+__init__	pygase.py	/^    def __init__(self):$/;"	m	class:RenderElementIntf
+__init__	pygase.py	/^    def __init__(self, display=((640, 480), 0, 32), allowed=True,$/;"	m	class:Application
+__init__	pygase.py	/^    def __init__(self, rect):$/;"	m	class:BasicRectElement
+__init__	pygase.py	/^    def __init__(self, rect):$/;"	m	class:SimpleRectElement
+__init__	pygase.py	/^    def __init__(self, rect,$/;"	m	class:BasicButton
+__init__	pygase.py	/^    def __init__(self, rect,$/;"	m	class:ChoiceButton
+__init__	pygase.py~	/^    def __init__(self):$/;"	m	class:RenderElementIntf
+__init__	pygase.py~	/^    def __init__(self, display=((640, 480), 0, 32), allowed=True,$/;"	m	class:Application
+__init__	pygase.py~	/^    def __init__(self, rect):$/;"	m	class:BasicRectElement
+__init__	pygase.py~	/^    def __init__(self, rect):$/;"	m	class:SimpleRectElement
+__init__	pygase.py~	/^    def __init__(self, rect,$/;"	m	class:BasicButton
+__init__	pygase.py~	/^    def __init__(self, rect,$/;"	m	class:ChoiceButton
+__invert__	VectorClass2d.py	/^    def __invert__(self):$/;"	m	class:Vec2d	file:
+__isub__	VectorClass2d.py	/^    def __isub__(self, other):$/;"	m	class:Vec2d	file:
+__itruediv__	VectorClass2d.py	/^    def __itruediv__(self, other):$/;"	m	class:Vec2d	file:
+__len__	VectorClass2d.py	/^    def __len__(self):$/;"	m	class:Vec2d	file:
+__lshift__	VectorClass2d.py	/^    def __lshift__(self, other):$/;"	m	class:Vec2d	file:
+__mod__	VectorClass2d.py	/^    def __mod__(self, other):$/;"	m	class:Vec2d	file:
+__mul__	VectorClass2d.py	/^    def __mul__(self, other):$/;"	m	class:Vec2d	file:
+__ne__	VectorClass2d.py	/^    def __ne__(self, other):$/;"	m	class:Vec2d	file:
+__neg__	VectorClass2d.py	/^    def __neg__(self):$/;"	m	class:Vec2d	file:
+__nonzero__	VectorClass2d.py	/^    def __nonzero__(self):$/;"	m	class:Vec2d	file:
+__or__	VectorClass2d.py	/^    def __or__(self, other):$/;"	m	class:Vec2d	file:
+__pos__	VectorClass2d.py	/^    def __pos__(self):$/;"	m	class:Vec2d	file:
+__pow__	VectorClass2d.py	/^    def __pow__(self, other):$/;"	m	class:Vec2d	file:
+__quit__	pygase.py	/^    def __quit__(self):$/;"	m	class:Application	file:
+__quit__	pygase.py	/^    def __quit__(self):$/;"	m	class:Element	file:
+__quit__	pygase.py	/^    def __quit__(self):$/;"	m	class:RenderElementIntf	file:
+__quit__	pygase.py~	/^    def __quit__(self):$/;"	m	class:Application	file:
+__quit__	pygase.py~	/^    def __quit__(self):$/;"	m	class:Element	file:
+__quit__	pygase.py~	/^    def __quit__(self):$/;"	m	class:RenderElementIntf	file:
+__radd__	VectorClass2d.py	/^    __radd__ = __add__$/;"	v	class:Vec2d
+__rand__	VectorClass2d.py	/^    __rand__ = __and__$/;"	v	class:Vec2d
+__rdiv__	VectorClass2d.py	/^    def __rdiv__(self, other):$/;"	m	class:Vec2d	file:
+__rdivmod__	VectorClass2d.py	/^    def __rdivmod__(self, other):$/;"	m	class:Vec2d	file:
+__repr__	VectorClass2d.py	/^    def __repr__(self):$/;"	m	class:Vec2d	file:
+__rfloordiv__	VectorClass2d.py	/^    def __rfloordiv__(self, other):$/;"	m	class:Vec2d	file:
+__rlshift__	VectorClass2d.py	/^    def __rlshift__(self, other):$/;"	m	class:Vec2d	file:
+__rmod__	VectorClass2d.py	/^    def __rmod__(self, other):$/;"	m	class:Vec2d	file:
+__rmul__	VectorClass2d.py	/^    __rmul__ = __mul__$/;"	v	class:Vec2d
+__ror__	VectorClass2d.py	/^    __ror__ = __or__$/;"	v	class:Vec2d
+__rpow__	VectorClass2d.py	/^    def __rpow__(self, other):$/;"	m	class:Vec2d	file:
+__rrshift__	VectorClass2d.py	/^    def __rrshift__(self, other):$/;"	m	class:Vec2d	file:
+__rshift__	VectorClass2d.py	/^    def __rshift__(self, other):$/;"	m	class:Vec2d	file:
+__rsub__	VectorClass2d.py	/^    def __rsub__(self, other):$/;"	m	class:Vec2d	file:
+__rtruediv__	VectorClass2d.py	/^    def __rtruediv__(self, other):$/;"	m	class:Vec2d	file:
+__rxor__	VectorClass2d.py	/^    __rxor__ = __xor__$/;"	v	class:Vec2d
+__setangle	VectorClass2d.py	/^    def __setangle(self, angle):$/;"	m	class:Vec2d	file:
+__setitem__	VectorClass2d.py	/^    def __setitem__(self, key, value):$/;"	m	class:Vec2d	file:
+__setlength	VectorClass2d.py	/^    def __setlength(self, value):$/;"	m	class:Vec2d	file:
+__setstate__	VectorClass2d.py	/^    def __setstate__(self, dict):$/;"	m	class:Vec2d	file:
+__slots__	VectorClass2d.py	/^    __slots__ = ['x', 'y']$/;"	v	class:Vec2d
+__sub__	VectorClass2d.py	/^    def __sub__(self, other):$/;"	m	class:Vec2d	file:
+__truediv__	VectorClass2d.py	/^    def __truediv__(self, other):$/;"	m	class:Vec2d	file:
+__xor__	VectorClass2d.py	/^    def __xor__(self, other):$/;"	m	class:Vec2d	file:
+_case_event	pygase.py	/^    def _case_event(self, event):$/;"	m	class:Element
+_case_event	pygase.py	/^    def _case_event(self, event):$/;"	m	class:RenderElementIntf
+_case_event	pygase.py~	/^    def _case_event(self, event):$/;"	m	class:Element
+_case_event	pygase.py~	/^    def _case_event(self, event):$/;"	m	class:RenderElementIntf
+_case_event_all	pygase.py	/^    def _case_event_all(self, event):$/;"	m	class:Application
+_case_event_all	pygase.py~	/^    def _case_event_all(self, event):$/;"	m	class:Application
+_e_case_event	pygase.py	/^    def _e_case_event(self, event):$/;"	m	class:Element
+_e_case_event	pygase.py~	/^    def _e_case_event(self, event):$/;"	m	class:Element
+_e_extra_events	pygase.py	/^    def _e_extra_events(self, event):$/;"	m	class:Element
+_e_extra_events	pygase.py~	/^    def _e_extra_events(self, event):$/;"	m	class:Element
+_e_post_event	pygase.py	/^    _e_post_event = _e_case_event$/;"	v	class:Element
+_e_post_event	pygase.py~	/^    _e_post_event = _e_case_event$/;"	v	class:Element
+_extra_events	pygase.py	/^    def _extra_events(self, event):$/;"	m	class:Element
+_extra_events	pygase.py~	/^    def _extra_events(self, event):$/;"	m	class:Element
+_get_event_pos	pygase.py	/^def _get_event_pos(event):$/;"	f
+_get_event_pos	pygase.py~	/^def _get_event_pos(event):$/;"	f
+_get_events	pygase.py	/^def _get_events():$/;"	f
+_get_events	pygase.py~	/^def _get_events():$/;"	f
+_io	VectorClass2d.py	/^    def _io(self, other, f):$/;"	m	class:Vec2d
+_new_event	pygase.py	/^def _new_event(*args, **kwargs):$/;"	f
+_new_event	pygase.py~	/^def _new_event(*args, **kwargs):$/;"	f
+_o2	VectorClass2d.py	/^    def _o2(self, other, f):$/;"	m	class:Vec2d
+_post_event	pygase.py	/^    _post_event = _case_event$/;"	v	class:Element
+_post_event	pygase.py	/^def _post_event(event):$/;"	f
+_post_event	pygase.py~	/^    _post_event = _case_event$/;"	v	class:Element
+_post_event	pygase.py~	/^def _post_event(event):$/;"	f
+_r_o2	VectorClass2d.py	/^    def _r_o2(self, other, f):$/;"	m	class:Vec2d
+_setup_event	pygase.py	/^def _setup_event(event):$/;"	f
+_setup_event	pygase.py~	/^def _setup_event(event):$/;"	f
+_wait_event	pygase.py	/^def _wait_event():$/;"	f
+_wait_event	pygase.py~	/^def _wait_event():$/;"	f
+actor	glak.py	/^import actor$/;"	i
+add_and_warp	actor.py	/^def add_and_warp(v, max, inc=1):$/;"	f
+add_element	pygase.py	/^    def add_element(self, element):$/;"	m	class:Application
+add_element	pygase.py~	/^    def add_element(self, element):$/;"	m	class:Application
+angle	VectorClass2d.py	/^    angle = property(get_angle, __setangle, None, "gets or sets the angle of a vector")$/;"	v	class:Vec2d
+case_event	game.py	/^    def case_event(self, event):$/;"	m	class:Game
+case_event	pygase.py	/^    def case_event(self, event):$/;"	m	class:Application
+case_event	pygase.py	/^    def case_event(self, event):$/;"	m	class:BasicButton
+case_event	pygase.py	/^    def case_event(self, event):$/;"	m	class:Element
+case_event	pygase.py~	/^    def case_event(self, event):$/;"	m	class:Application
+case_event	pygase.py~	/^    def case_event(self, event):$/;"	m	class:BasicButton
+case_event	pygase.py~	/^    def case_event(self, event):$/;"	m	class:Element
+convert_to_basis	VectorClass2d.py	/^    def convert_to_basis(self, x_vector, y_vector):$/;"	m	class:Vec2d
+cross	VectorClass2d.py	/^    def cross(self, other):$/;"	m	class:Vec2d
+cut_sub_images	actor.py	/^def cut_sub_images(image, width, height, number):$/;"	f
+do_paint	pygase.py	/^    def do_paint(self):$/;"	m	class:Application
+do_paint	pygase.py~	/^    def do_paint(self):$/;"	m	class:Application
+dot	VectorClass2d.py	/^    def dot(self, other):$/;"	m	class:Vec2d
+fill_background	game.py	/^    def fill_background(self):$/;"	m	class:Game
+fill_background	pygase.py	/^    def fill_background(self):$/;"	m	class:Application
+fill_background	pygase.py~	/^    def fill_background(self):$/;"	m	class:Application
+get_angle	VectorClass2d.py	/^    def get_angle(self):$/;"	m	class:Vec2d
+get_angle_between	VectorClass2d.py	/^    def get_angle_between(self, other):$/;"	m	class:Vec2d
+get_dist_sqrd	VectorClass2d.py	/^    def get_dist_sqrd(self, other):$/;"	m	class:Vec2d
+get_distance	VectorClass2d.py	/^    def get_distance(self, other):$/;"	m	class:Vec2d
+get_length	VectorClass2d.py	/^    def get_length(self):$/;"	m	class:Vec2d
+get_length_sqrd	VectorClass2d.py	/^    def get_length_sqrd(self):$/;"	m	class:Vec2d
+glak	actor.py	/^import glak$/;"	i
+image_name	actor.py	/^def image_name(name, width, height, number=None):$/;"	f
+interpolate_to	VectorClass2d.py	/^    def interpolate_to(self, other, range):$/;"	m	class:Vec2d
+is_over	pygase.py	/^    def is_over(self, pos=None):$/;"	m	class:SimpleRectElement
+is_over	pygase.py~	/^    def is_over(self, pos=None):$/;"	m	class:SimpleRectElement
+length	VectorClass2d.py	/^    length = property(get_length, __setlength, None, "gets or sets the magnitude of the vector")$/;"	v	class:Vec2d
+load_sub_images	actor.py	/^def load_sub_images(name, width, height, number):$/;"	f
+loop	.eye.game.py	/^def loop(self):$/;"	f
+maininit	game.py	/^    def maininit(self):$/;"	m	class:Game
+maininit	pygase.py	/^    def maininit(self):$/;"	m	class:Application
+maininit	pygase.py~	/^    def maininit(self):$/;"	m	class:Application
+mainloop	pygase.py	/^    def mainloop(self):$/;"	m	class:Application
+mainloop	pygase.py~	/^    def mainloop(self):$/;"	m	class:Application
+math	VectorClass2d.py	/^import math$/;"	i
+new_event	pygase.py	/^new_event = _new_event$/;"	v
+new_event	pygase.py~	/^new_event = _new_event$/;"	v
+normalize_return_length	VectorClass2d.py	/^    def normalize_return_length(self):$/;"	m	class:Vec2d
+normalized	VectorClass2d.py	/^    def normalized(self):$/;"	m	class:Vec2d
+operator	VectorClass2d.py	/^import operator$/;"	i
+paint	glak.py	/^    def paint(self):$/;"	m	class:GObject
+paint	pygase.py	/^    def paint(self):$/;"	m	class:Application
+paint	pygase.py	/^    def paint(self):$/;"	m	class:BasicButton
+paint	pygase.py	/^    def paint(self):$/;"	m	class:RenderElementIntf
+paint	pygase.py	/^    def paint(self):$/;"	m	class:SimpleRectElement
+paint	pygase.py~	/^    def paint(self):$/;"	m	class:Application
+paint	pygase.py~	/^    def paint(self):$/;"	m	class:BasicButton
+paint	pygase.py~	/^    def paint(self):$/;"	m	class:RenderElementIntf
+paint	pygase.py~	/^    def paint(self):$/;"	m	class:SimpleRectElement
+paint_all	pygase.py	/^    def paint_all(self):$/;"	m	class:Application
+paint_all	pygase.py~	/^    def paint_all(self):$/;"	m	class:Application
+perpendicular	VectorClass2d.py	/^    def perpendicular(self):$/;"	m	class:Vec2d
+perpendicular_normal	VectorClass2d.py	/^    def perpendicular_normal(self):$/;"	m	class:Vec2d
+pickle	VectorClass2d.py	/^    import pickle$/;"	i
+post_event	pygase.py	/^    post_event = case_event$/;"	v	class:Element
+post_event	pygase.py~	/^    post_event = case_event$/;"	v	class:Element
+pressed	pygase.py	/^    def pressed(self, eventup):$/;"	m	class:BasicButton
+pressed	pygase.py	/^    def pressed(self, eventup):$/;"	m	class:ChoiceButton
+pressed	pygase.py~	/^    def pressed(self, eventup):$/;"	m	class:BasicButton
+pressed	pygase.py~	/^    def pressed(self, eventup):$/;"	m	class:ChoiceButton
+projection	VectorClass2d.py	/^    def projection(self, other):$/;"	m	class:Vec2d
+pygame	.eye.game.py	/^import pygame$/;"	i
+pygame	actor.py	/^import pygame$/;"	i
+pygame	game.py	/^import pygame$/;"	i
+pygame	pygase.py	/^import pygame$/;"	i
+pygame	pygase.py~	/^import pygame$/;"	i
+pygase	glak.py	/^import pygase$/;"	i
+remove_element	pygase.py	/^    def remove_element(self, element):$/;"	m	class:Application
+remove_element	pygase.py~	/^    def remove_element(self, element):$/;"	m	class:Application
+render	pygase.py	/^    def render(self, screen):$/;"	m	class:RenderElementIntf
+render	pygase.py	/^    def render(self, screen):$/;"	m	class:SimpleRectElement
+render	pygase.py~	/^    def render(self, screen):$/;"	m	class:RenderElementIntf
+render	pygase.py~	/^    def render(self, screen):$/;"	m	class:SimpleRectElement
+render_all	pygase.py	/^    def render_all(self):$/;"	m	class:Application
+render_all	pygase.py~	/^    def render_all(self):$/;"	m	class:Application
+rotate	VectorClass2d.py	/^    def rotate(self, angle):$/;"	m	class:Vec2d
+rotated	VectorClass2d.py	/^    def rotated(self, angle):$/;"	m	class:Vec2d
+run	pygase.py	/^    def run(self):$/;"	m	class:Application
+run	pygase.py~	/^    def run(self):$/;"	m	class:Application
+setUp	VectorClass2d.py	/^        def setUp(self):$/;"	m	class:.UnitTestVec2D
+testAngles	VectorClass2d.py	/^        def testAngles(self):$/;"	m	class:.UnitTestVec2D
+testComparison	VectorClass2d.py	/^        def testComparison(self):$/;"	m	class:.UnitTestVec2D
+testCreationAndAccess	VectorClass2d.py	/^        def testCreationAndAccess(self):$/;"	m	class:.UnitTestVec2D
+testCross	VectorClass2d.py	/^        def testCross(self):$/;"	m	class:.UnitTestVec2D
+testHighLevel	VectorClass2d.py	/^        def testHighLevel(self):$/;"	m	class:.UnitTestVec2D
+testInplace	VectorClass2d.py	/^        def testInplace(self):$/;"	m	class:.UnitTestVec2D
+testLength	VectorClass2d.py	/^        def testLength(self):$/;"	m	class:.UnitTestVec2D
+testMath	VectorClass2d.py	/^        def testMath(self):$/;"	m	class:.UnitTestVec2D
+testPickle	VectorClass2d.py	/^        def testPickle(self):$/;"	m	class:.UnitTestVec2D
+testReverseMath	VectorClass2d.py	/^        def testReverseMath(self):$/;"	m	class:.UnitTestVec2D
+testUnary	VectorClass2d.py	/^        def testUnary(self):$/;"	m	class:.UnitTestVec2D
+timepaint	pygase.py	/^    def timepaint(self):$/;"	m	class:Application
+timepaint	pygase.py~	/^    def timepaint(self):$/;"	m	class:Application
+timetick	actor.py	/^    def timetick(self, time_passed):$/;"	m	class:Imageactor
+timetick	pygase.py	/^    def timetick(self, time_passed):$/;"	m	class:Application
+timetick	pygase.py	/^    def timetick(self, time_passed):$/;"	m	class:SimpleRectElement
+timetick	pygase.py~	/^    def timetick(self, time_passed):$/;"	m	class:Application
+timetick	pygase.py~	/^    def timetick(self, time_passed):$/;"	m	class:SimpleRectElement
+timetick_all	pygase.py	/^    def timetick_all(self, time_passed):$/;"	m	class:Application
+timetick_all	pygase.py~	/^    def timetick_all(self, time_passed):$/;"	m	class:Application
+unittest	VectorClass2d.py	/^    import unittest$/;"	i
+update	pygase.py	/^    def update(self):$/;"	m	class:Application
+update	pygase.py~	/^    def update(self):$/;"	m	class:Application
